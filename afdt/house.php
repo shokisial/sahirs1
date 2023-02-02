@@ -80,12 +80,12 @@ $empno = date('m/Y');
 <tr>
 <td>
 
-<p style="font-size:20px" style="text-align: justify;">I,  <b> <u><?php echo $bname; ?>&nbsp;&nbsp;  </u></b>   S/W/D/O <u> &nbsp;&nbsp;  </u></b> <b> <u><?php echo $fname; ?>&nbsp;&nbsp;  </u></b>, bearing CNIC no.  <b> <u><?php echo $cnic; ?>&nbsp;&nbsp; </b></u>&nbsp; </u> R/O &nbsp;&nbsp; <b> <u><?php echo $add; ?> <?php echo $cty; ?> &nbsp;&nbsp;&nbsp; </b> </u> </u></b>
+<p style="font-size:20px" style="text-align: justify;">I,  <b> <u><? echo $bname; ?>&nbsp;&nbsp;  </u></b>   S/W/D/O <u> &nbsp;&nbsp;  </u></b> <b> <u><? echo $fname; ?>&nbsp;&nbsp;  </u></b>, bearing CNIC no.  <b> <u><? echo $cnic; ?>&nbsp;&nbsp; </b></u>&nbsp; </u> R/O &nbsp;&nbsp; <b> <u><? echo $add; ?> <? echo $cty; ?> &nbsp;&nbsp;&nbsp; </b> </u> </u></b>
 
-    <?php if($typ==='Joint'){ ?> <u><b> <?php echo '/ ' .  $jbname; ?>&nbsp;&nbsp;  </u></b> S/W/D/O &nbsp;&nbsp; <u> <b>  <?php echo '   ' .$jfname; ?> &nbsp;&nbsp;&nbsp;&nbsp;</u></b>&nbsp;&nbsp;Bearing CNIC, <u>&nbsp;&nbsp; <b> <u><?php echo $jcnic; ?> </u></b> </b></u>&nbsp; </u> R/O &nbsp;&nbsp; <b> <u><?php echo $jadd; ?> <?php echo $jcty; ?> &nbsp;&nbsp;&nbsp; </b> </u> <?php } ?>
+    <?php if($typ==='Joint'){ ?> <u><b> <? echo '/ ' .  $jbname; ?>&nbsp;&nbsp;  </u></b> S/W/D/O &nbsp;&nbsp; <u> <b>  <? echo '   ' .$jfname; ?> &nbsp;&nbsp;&nbsp;&nbsp;</u></b>&nbsp;&nbsp;Bearing CNIC, <u>&nbsp;&nbsp; <b> <u><? echo $jcnic; ?> </u></b> </b></u>&nbsp; </u> R/O &nbsp;&nbsp; <b> <u><? echo $jadd; ?> <? echo $jcty; ?> &nbsp;&nbsp;&nbsp; </b> </u> <? } ?>
     
         </u>
-        have purchased Apartment / House number  <b> <u><?php echo $plotno; ?>&nbsp;&nbsp;  </u></b>, <b> <u><?php echo $block ?>&nbsp;&nbsp;  </u></b>in Khayaban-e-Amin. I hereby give an undertaking that I will carry out the remaining works which include paints, finishing and fixtures myself at my own cost and will not claim any charges whatever from The Company M/s Sahir Associates (Pvt) Ltd on these counts. That what have been stated above is correct to the best of my knowledge and belief.</p>
+        have purchased Apartment / House number  <b> <u><? echo $plotno; ?>&nbsp;&nbsp;  </u></b>, <b> <u><? echo $block ?>&nbsp;&nbsp;  </u></b>in Khayaban-e-Amin. I hereby give an undertaking that I will carry out the remaining works which include paints, finishing and fixtures myself at my own cost and will not claim any charges whatever from The Company M/s Sahir Associates (Pvt) Ltd on these counts. That what have been stated above is correct to the best of my knowledge and belief.</p>
  
 </td><tr> <td>
   

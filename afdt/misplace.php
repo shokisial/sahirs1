@@ -61,11 +61,11 @@ $empno = date('m/Y');
 <tr>
 <td>
 
-It is stated that I  <b><?php echo $seller; ?></b> _ S/O __________ 
+It is stated that I  <b><? echo $seller; ?></b> _ S/O __________ 
 </td><tr> <td>
 having CNIC # _____________________ I misplaced Original Transfer Letter 
 </td><tr> <td>
-of  <?php echo $plotno . ' ' ;?> measuring <?php echo $flcat; ?> in the Kahayan-e-Amin
+of  <? echo $plotno . ' ' ;?> measuring <? echo $flcat; ?> in the Kahayan-e-Amin
 </td><tr> <td>
 That if the above mentioned misplaced Transfer Letter misused by me 
 </td><tr> <td>
@@ -94,7 +94,7 @@ knowledge and belief and nothing has been concealed therein.
 
 <tr> <tr><tr><tr><tr>
  <td>   
-Verified on oath this ____<?php echo  $dat; ?>_____________ day of _ <?php echo $empno; ?>________, that contents of the
+Verified on oath this ____<? echo  $dat; ?>_____________ day of _ <? echo $empno; ?>________, that contents of the
 above affidavit are true and correct to the best of my knowledge and belief and that nothing has been
 concealed therein
 </td>

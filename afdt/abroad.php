@@ -61,7 +61,7 @@ $dat = date('d');
 $empno = date('m/Y');
 ?>
 
-<p align="justify">CNIC No. ____________________________________on behalf of  <b><?php echo $bname; ?></b> _ S/O <b><?php echo $fname; ?></b>
+<p align="justify">CNIC No. ____________________________________on behalf of  <b><? echo $bname; ?></b> _ S/O <b><? echo $fname; ?></b>
 </p>
 
 <table width="800" border="0">
@@ -78,11 +78,11 @@ I ________________________________________________________
 </td><tr> <td>
 R/O _______________________________________________________
 </td><tr> <td>
-CNIC No. ____________________________________on behalf of  <b><?php echo $bname; ?></b> _ S/O <b><?php echo $fname; ?></b>
+CNIC No. ____________________________________on behalf of  <b><? echo $bname; ?></b> _ S/O <b><? echo $fname; ?></b>
 </td><tr> <td>
-holding CNIC # <?php echo $cnic; ?> do hereby solemnly affirm and decalre as under:
+holding CNIC # <? echo $cnic; ?> do hereby solemnly affirm and decalre as under:
 </td><tr> <td>
-1.    That  __________________ have purchased the a   <?php echo $plotno . ' ' ;?> measuring <?php echo $flcat; ?> in the Kahayan-e-Amin Defence Road, Lahore,from ________________________________ holding CNIC # _____________
+1.    That  __________________ have purchased the a   <? echo $plotno . ' ' ;?> measuring <? echo $flcat; ?> in the Kahayan-e-Amin Defence Road, Lahore,from ________________________________ holding CNIC # _____________
 </td><tr> <td> 
 2.   I undertake that the original Purchaser of above mentioned plot is presently not in Pakistan, so he/she </td><tr> <td>
     cannot sign the transfer papers regarding the above mentioned plot in Khayaban-e-Amin’s Office.
@@ -114,7 +114,7 @@ seller and purchaser.
 
 <tr> <tr><tr><tr><tr>
  <td>   
-Verified on oath this ____<?php echo  $dat; ?>_____________ day of _ <?php echo $empno; ?>________, that contents of the
+Verified on oath this ____<? echo  $dat; ?>_____________ day of _ <? echo $empno; ?>________, that contents of the
 above affidavit are true and correct to the best of my knowledge and belief and that nothing has been
 concealed therein
 </td>

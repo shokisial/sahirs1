@@ -60,19 +60,19 @@ $empno = date('m/Y');
 <tr>
 <td>
 
-Affidavit of <b><?php echo $seller; ?></b> _ S/O __________ Resident of
+Affidavit of <b><? echo $seller; ?></b> _ S/O __________ Resident of
 </td><tr> <td>
 _____________________do hereby solemnly affirm and on oath as under:-
 </td><tr> <td>
-That I was allocated a House / Plot <?php echo $plotno . ' ' . $block ; ?> measuring <?php echo $flcat; ?> in the Kahayan-e-Amin vide.
+That I was allocated a House / Plot <? echo $plotno . ' ' . $block ; ?> measuring <? echo $flcat; ?> in the Kahayan-e-Amin vide.
 </td><tr> <td>
-Allocation / Allotment letter No: <?php echo $altno; ?> Dated : ______
+Allocation / Allotment letter No: <? echo $altno; ?> Dated : ______
 </td><tr> <tr><tr><tr><tr><tr>
 <br>
 <td>
-That I have applied for the transfer of the said Allotment in the name of <?php echo $bname; ?> W/O 
+That I have applied for the transfer of the said Allotment in the name of <? echo $bname; ?> W/O 
 </td><tr> <td>
-<?php echo $fname; ?> Resident of <?php echo $add; ?>
+<? echo $fname; ?> Resident of <? echo $add; ?>
 </td><tr> <td>
  thereby relinquishing all my rights, title interest etc. In favour of the above, and I 
 </td><tr> <td>
@@ -82,7 +82,7 @@ I hereby return the original allotment letter and payment schedule for cancellat
 </td><tr> <td>
 in favour of That I have applied for the transfer of the said allotment in the name of <?echo $bname; ?> W/O
 </td><tr> <td>
-<?php echo $fname; ?> Resident of <?php echo $add; ?>
+<? echo $fname; ?> Resident of <? echo $add; ?>
 </td><tr> <td>
  that what have been stated above in correct to be best of my knowledge and belief.
 </td></tr> 
@@ -100,7 +100,7 @@ in favour of That I have applied for the transfer of the said allotment in the n
 
 <tr> <tr><tr><tr><tr>
  <td>   
-Verified on oath this ____<?php echo  $dat; ?>_____________ day of _ <?php echo $empno; ?>________, that contents of the
+Verified on oath this ____<? echo  $dat; ?>_____________ day of _ <? echo $empno; ?>________, that contents of the
 above affidavit are true and correct to the best of my knowledge and belief and that nothing has been
 concealed therein
 </td>
@@ -126,12 +126,12 @@ concealed therein
 <tr>
 <td>
 
-Affidavit of That I have applied for the transfer of the said Allotment in the name of<b><?php echo '  ' . $bname; ?></b> _ S/W/O  <b> </td><tr> <td>
-<?php echo $fname; ?></b>Resident of <b><?php echo '  ' . $add; ?></b> hereby solemnly affirms and declares on oath as under:-
+Affidavit of That I have applied for the transfer of the said Allotment in the name of<b><? echo '  ' . $bname; ?></b> _ S/W/O  <b> </td><tr> <td>
+<? echo $fname; ?></b>Resident of <b><? echo '  ' . $add; ?></b> hereby solemnly affirms and declares on oath as under:-
 </td><tr> <td>
-That I have applied to transfer for a House/Plot <?php echo $plotno . ' ' . $block ; ?> measuring <?php echo ' ' . $flcat; ?> in the Kahayan-e-Amin vide.
+That I have applied to transfer for a House/Plot <? echo $plotno . ' ' . $block ; ?> measuring <? echo ' ' . $flcat; ?> in the Kahayan-e-Amin vide.
 </td><tr> <td>
-Allocation / Allotment letter No: <?php echo ' ' . $altno; ?> Dated : ______ as stated in Part D and E or the application
+Allocation / Allotment letter No: <? echo ' ' . $altno; ?> Dated : ______ as stated in Part D and E or the application
 </td><tr> <tr><tr><tr><tr><tr>
 <br>
 <td>
@@ -167,7 +167,7 @@ That what have been stated above is correct to the best of my knowledge and beli
 
 <tr> <tr><tr><tr><tr>
  <td>   
-Verified on oath this ____<?php echo  $dat; ?>_____________ day of _ <?php echo $empno; ?>________, that contents of the
+Verified on oath this ____<? echo  $dat; ?>_____________ day of _ <? echo $empno; ?>________, that contents of the
 above 
 </td><tr> <td>
     affidavit are true and correct to the best of my knowledge and belief and that nothing has been
@@ -195,8 +195,8 @@ concealed therein
 <tr>
 <td>
 
-I<b><?php echo '  ' . $bname; ?></b> _ S/W/O  <b> 
-<?php echo $fname; ?></b>Resident of </td><tr> <td> <b><?php echo '  ' . $add; ?></b> solemnly affirms </td><tr> <td> and declares that I have paid all applicable governmental </td><tr> <td> taxes/duties such as stamp duty, withholding tax , corporation </td><tr> <td> fee & cvt etc with respect to residential/commercial </td><tr> <td> House/Plot/Apartment No <?php echo $plotno . ' ' . $block ; ?> measuring <?php echo ' ' . $flcat; ?> in the Kahayan-e-Amin.
+I<b><? echo '  ' . $bname; ?></b> _ S/W/O  <b> 
+<? echo $fname; ?></b>Resident of </td><tr> <td> <b><? echo '  ' . $add; ?></b> solemnly affirms </td><tr> <td> and declares that I have paid all applicable governmental </td><tr> <td> taxes/duties such as stamp duty, withholding tax , corporation </td><tr> <td> fee & cvt etc with respect to residential/commercial </td><tr> <td> House/Plot/Apartment No <? echo $plotno . ' ' . $block ; ?> measuring <? echo ' ' . $flcat; ?> in the Kahayan-e-Amin.
 </td><tr> <td>
 Therefore, I submit the original receipts with M/S Sahir 
 </td><tr> <td>
@@ -239,8 +239,8 @@ CNIC_______________
 <tr>
 <td>
 
-I<b><?php echo '  ' . $seller; ?></b> _ S/W/O  <b> 
-<?php echo '___________________'; ?></b>Resident of </td><tr> <td> <b><?php echo '  ' . '__________________________'; ?></b> solemnly affirms </td><tr> <td> and declares that I have paid all applicable governmental </td><tr> <td> taxes/duties such as gain tax etc with respect to residential/commercial </td><tr> <td> House/Plot/Apartment No <?php echo $plotno . ' ' . $block ; ?> measuring <?php echo ' ' . $flcat; ?> in the Kahayan-e-Amin.
+I<b><? echo '  ' . $seller; ?></b> _ S/W/O  <b> 
+<? echo '___________________'; ?></b>Resident of </td><tr> <td> <b><? echo '  ' . '__________________________'; ?></b> solemnly affirms </td><tr> <td> and declares that I have paid all applicable governmental </td><tr> <td> taxes/duties such as gain tax etc with respect to residential/commercial </td><tr> <td> House/Plot/Apartment No <? echo $plotno . ' ' . $block ; ?> measuring <? echo ' ' . $flcat; ?> in the Kahayan-e-Amin.
 </td><tr> <td>
 Therefore, I submit the original receipts with M/S Sahir 
 </td><tr> <td>
@@ -283,9 +283,9 @@ CNIC_______________
 <tr>
 <td>
 
-I<b><?php echo '  ' . $bname; ?></b> _ S/W/O  <b> 
-<?php echo $bname; ?></b> </td><tr> <td align="justify">  CNIC #  <b><?php echo '  ' . $cnic; ?></b> have purchased Apartment / House number </td><tr> <td> 
-<?php echo $plotno . ' ' . $block ; ?> in the Kahayan-e-Amin, I hereby give an undertaking  </td><tr> <td> that I will carry out the remaining works which include paints, finishes and </td><tr> <td> fixtures myself at my own cost and will not claim any charges whatever from </td><tr> <td>
+I<b><? echo '  ' . $bname; ?></b> _ S/W/O  <b> 
+<? echo $bname; ?></b> </td><tr> <td align="justify">  CNIC #  <b><? echo '  ' . $cnic; ?></b> have purchased Apartment / House number </td><tr> <td> 
+<? echo $plotno . ' ' . $block ; ?> in the Kahayan-e-Amin, I hereby give an undertaking  </td><tr> <td> that I will carry out the remaining works which include paints, finishes and </td><tr> <td> fixtures myself at my own cost and will not claim any charges whatever from </td><tr> <td>
     The Company i.e. M/s Sahir Associates (Pvt) Ltd on these counts.
     </td><tr> <td> That what have been stated above is correct to the best of my knowledge and belief.
 
@@ -318,11 +318,11 @@ Dated:- _______________
 <tr>
 <td>
 
-It is stated that I  <b><?php echo $seller; ?></b> _ S/O __________ 
+It is stated that I  <b><? echo $seller; ?></b> _ S/O __________ 
 </td><tr> <td>
 having CNIC # _____________________ I misplaced Original Transfer Letter 
 </td><tr> <td>
-of  <?php echo $plotno . ' ' ;?> measuring <?php echo $flcat; ?> in the Kahayan-e-Amin
+of  <? echo $plotno . ' ' ;?> measuring <? echo $flcat; ?> in the Kahayan-e-Amin
 </td><tr> <td>
 That if the above mentioned misplaced Transfer Letter misused by me 
 </td><tr> <td>
@@ -351,7 +351,7 @@ knowledge and belief and nothing has been concealed therein.
 
 <tr> <tr><tr><tr><tr>
  <td>   
-Verified on oath this ____<?php echo  $dat; ?>_____________ day of _ <?php echo $empno; ?>________, that contents of the
+Verified on oath this ____<? echo  $dat; ?>_____________ day of _ <? echo $empno; ?>________, that contents of the
 above affidavit are true and correct to the best of my knowledge and belief and that nothing has been
 concealed therein
 </td>
@@ -380,11 +380,11 @@ I ________________________________________________________
 </td><tr> <td>
 R/O _______________________________________________________
 </td><tr> <td>
-CNIC No. ____________________________________on behalf of  <b><?php echo $bname; ?></b> _ S/O <b><?php echo $fname; ?></b>
+CNIC No. ____________________________________on behalf of  <b><? echo $bname; ?></b> _ S/O <b><? echo $fname; ?></b>
 </td><tr> <td>
-holding CNIC # <?php echo $cnic; ?> do hereby solemnly affirm and decalre as under:
+holding CNIC # <? echo $cnic; ?> do hereby solemnly affirm and decalre as under:
 </td><tr> <td>
-1.    That  __________________ have purchased the a   <?php echo $plotno . ' ' ;?> measuring <?php echo $flcat; ?> in the Kahayan-e-Amin Defence Road, Lahore,from ________________________________ holding CNIC # _____________
+1.    That  __________________ have purchased the a   <? echo $plotno . ' ' ;?> measuring <? echo $flcat; ?> in the Kahayan-e-Amin Defence Road, Lahore,from ________________________________ holding CNIC # _____________
 </td><tr> <td> 
 2.   I undertake that the original Purchaser of above mentioned plot is presently not in Pakistan, so he/she </td><tr> <td>
     cannot sign the transfer papers regarding the above mentioned plot in Khayaban-e-Amin’s Office.
@@ -416,7 +416,7 @@ seller and purchaser.
 
 <tr> <tr><tr><tr><tr>
  <td>   
-Verified on oath this ____<?php echo  $dat; ?>_____________ day of _ <?php echo $empno; ?>________, that contents of the
+Verified on oath this ____<? echo  $dat; ?>_____________ day of _ <? echo $empno; ?>________, that contents of the
 above affidavit are true and correct to the best of my knowledge and belief and that nothing has been
 concealed therein
 </td>

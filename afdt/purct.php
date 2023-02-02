@@ -69,7 +69,7 @@ $empno = date('m/Y');
 
 <h2 align="center">Purchase Consent </h2></strong></p>
 
-<p style="font-size:15px" style="text-align: justify;">I, <u>&nbsp;&nbsp;<?php echo $bname; ?> &nbsp;&nbsp; </u> S/W/D/O  &nbsp;&nbsp;<?php echo $gdn; ?><u> &nbsp;<?php echo $fname; ?>&nbsp;</u>&nbsp;bearing CNIC <u>&nbsp;&nbsp; <?php echo $cnic; ?>&nbsp;&nbsp; </u>&nbsp;has purchased Plot #<u>&nbsp; &nbsp;<?php echo $plotno; ?>&nbsp; </u> Block <u>&nbsp;<?php echo $block; ?>&nbsp; </u>of Khayaban-e-Amin, and has received the allotment letter for the same. I undertake:</p>
+<p style="font-size:15px" style="text-align: justify;">I, <u>&nbsp;&nbsp;<? echo $bname; ?> &nbsp;&nbsp; </u> S/W/D/O  &nbsp;&nbsp;<? echo $gdn; ?><u> &nbsp;<? echo $fname; ?>&nbsp;</u>&nbsp;bearing CNIC <u>&nbsp;&nbsp; <? echo $cnic; ?>&nbsp;&nbsp; </u>&nbsp;has purchased Plot #<u>&nbsp; &nbsp;<? echo $plotno; ?>&nbsp; </u> Block <u>&nbsp;<? echo $block; ?>&nbsp; </u>of Khayaban-e-Amin, and has received the allotment letter for the same. I undertake:</p>
 <ol style="text-align: justify;" style="font-size:15px">
 <li style="font-size:15px">That I abide by the schedule of payment as received</li>
 <li style="font-size:15px">Payment shall be made through cash/banking instrument if favor of M/s Sahir Associates (Pvt) Ltd.</li>

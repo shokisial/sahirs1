@@ -69,15 +69,15 @@ $empno = date('m/Y');
  <h2 align="center">BUYER UNDERTAKING/AFFIDAVIT FOR TAX </h2></strong></p>
 
 <p><strong>&nbsp;</strong></p>
-<p style="font-size:20px" style="text-align: justify;">I, <u><b> <? echo $bname; ?>&nbsp;&nbsp;  </u></b></u> S/W/D/O &nbsp;&nbsp; <u> <b>  <? echo '   ' .$fname; ?> &nbsp;&nbsp;&nbsp;&nbsp;</u></b>&nbsp;&nbsp;Bearing CNIC, <u> <b> <u><? echo $cnic; ?> </u></b>&nbsp;&nbsp; &nbsp;R/O &nbsp;&nbsp; <b> <u><? echo $add . '   ' . $ct; ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b></u>&nbsp;</u>
+<p style="font-size:20px" style="text-align: justify;">I, <u><b> <?php echo $bname; ?>&nbsp;&nbsp;  </u></b></u> S/W/D/O &nbsp;&nbsp; <u> <b>  <?php echo '   ' .$fname; ?> &nbsp;&nbsp;&nbsp;&nbsp;</u></b>&nbsp;&nbsp;Bearing CNIC, <u> <b> <u><?php echo $cnic; ?> </u></b>&nbsp;&nbsp; &nbsp;R/O &nbsp;&nbsp; <b> <u><?php echo $add . '   ' . $ct; ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b></u>&nbsp;</u>
 
-    <?php if($typ==='Joint'){ ?> <u><b> <? echo '/ ' .  $jbname; ?>&nbsp;&nbsp;  </u></b> S/W/D/O &nbsp;&nbsp; <u> <b>  <? echo '   ' .$jfname; ?> &nbsp;&nbsp;&nbsp;&nbsp;</u></b>&nbsp;&nbsp;Bearing CNIC, <u>&nbsp;&nbsp; <b> <u><? echo $jcnic; ?> </u></b> </b></u>&nbsp; </u> R/O &nbsp;&nbsp; <b> <u><? echo $jadd; ?> <? echo $jcty; ?> &nbsp;&nbsp;&nbsp; </b> </u> <? } ?>
+    <?php if($typ==='Joint'){ ?> <u><b> <?php echo '/ ' .  $jbname; ?>&nbsp;&nbsp;  </u></b> S/W/D/O &nbsp;&nbsp; <u> <b>  <?php echo '   ' .$jfname; ?> &nbsp;&nbsp;&nbsp;&nbsp;</u></b>&nbsp;&nbsp;Bearing CNIC, <u>&nbsp;&nbsp; <b> <u><?php echo $jcnic; ?> </u></b> </b></u>&nbsp; </u> R/O &nbsp;&nbsp; <b> <u><?php echo $jadd; ?> <?php echo $jcty; ?> &nbsp;&nbsp;&nbsp; </b> </u> <?php } ?>
     
         </u>
         
         </u> 
-        solemnly affirm and declare that I have paid all applicable government taxes / duties such as stamp duty, withholding tax, corporation fee &amp; cvt etc with respect to residential / commercial Plot  / House / Apartment No.<u> &nbsp;&nbsp; <b> <? echo $plotno; ?> </u></b>&nbsp;&nbsp; </u>measuring &nbsp;&nbsp; 
-    <b><u><? echo $cat; ?> </u></b>&nbsp;&nbsp; Category &nbsp;&nbsp; <b> <u> <? echo $flcat; ?> </u></b>&nbsp;&nbsp; situated at&nbsp; block &nbsp;&nbsp; <b> <u><? echo $block; ?> </u></b>&nbsp;&nbsp;  Khayaban-e-Amin housing Scheme, Lahore. Therefore, I submit the original receipts with M/s Sahir Associates (pvt) limited so that the same may become part of file of plot mentioned herein above. The undersigned takes complete responsibility regarding genuineness of receipts/stamp paper of taxes   / duties. In case later on any deficiency or defect concerning payment of taxes surfaced by FBR relating to this plot the undersigned shall be solely responsible to cure such deficiency or defect.</p>
+        solemnly affirm and declare that I have paid all applicable government taxes / duties such as stamp duty, withholding tax, corporation fee &amp; cvt etc with respect to residential / commercial Plot  / House / Apartment No.<u> &nbsp;&nbsp; <b> <?php echo $plotno; ?> </u></b>&nbsp;&nbsp; </u>measuring &nbsp;&nbsp; 
+    <b><u><?php echo $cat; ?> </u></b>&nbsp;&nbsp; Category &nbsp;&nbsp; <b> <u> <?php echo $flcat; ?> </u></b>&nbsp;&nbsp; situated at&nbsp; block &nbsp;&nbsp; <b> <u><?php echo $block; ?> </u></b>&nbsp;&nbsp;  Khayaban-e-Amin housing Scheme, Lahore. Therefore, I submit the original receipts with M/s Sahir Associates (pvt) limited so that the same may become part of file of plot mentioned herein above. The undersigned takes complete responsibility regarding genuineness of receipts/stamp paper of taxes   / duties. In case later on any deficiency or defect concerning payment of taxes surfaced by FBR relating to this plot the undersigned shall be solely responsible to cure such deficiency or defect.</p>
 <p>&nbsp;</p>
 <table width="696">
 <tbody>
