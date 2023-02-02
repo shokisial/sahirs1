@@ -1,0 +1,1 @@
+[24-May-2022 04:09:42 UTC] PHP Catchable fatal error:  Object of class mysqli could not be converted to string in /home/v0503sah/public_html/Trake/file_manager/connection/dbcon.php on line 3

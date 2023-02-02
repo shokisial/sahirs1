@@ -1,0 +1,67 @@
+[22-Dec-2022 05:45:21 UTC] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/v0503sah/public_html/Trake/file_manager/login.php on line 7
+[22-Dec-2022 05:45:25 UTC] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/v0503sah/public_html/Trake/file_manager/login.php on line 7
+[22-Dec-2022 07:33:48 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'v0503sah_newusr'@'localhost' (using password: YES) in /home/w1222sah/public_html/file_manager/connection/dbcon.php on line 2
+[22-Dec-2022 07:33:48 UTC] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/w1222sah/public_html/file_manager/connection/dbcon.php on line 2
+[22-Dec-2022 07:41:24 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'v0503sah_newusr'@'localhost' (using password: YES) in /home/w1222sah/public_html/file_manager/connection/dbcon.php on line 2
+[22-Dec-2022 07:41:24 UTC] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/w1222sah/public_html/file_manager/connection/dbcon.php on line 2
+[22-Dec-2022 07:41:53 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'v0503sah_newusr'@'localhost' (using password: YES) in /home/w1222sah/public_html/file_manager/connection/dbcon.php on line 2
+[22-Dec-2022 07:41:53 UTC] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/w1222sah/public_html/file_manager/connection/dbcon.php on line 2
+[22-Dec-2022 07:43:04 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'v0503sah_newusr'@'localhost' (using password: YES) in /home/w1222sah/public_html/file_manager/connection/dbcon.php on line 2
+[22-Dec-2022 07:43:04 UTC] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/w1222sah/public_html/file_manager/connection/dbcon.php on line 2
+[22-Dec-2022 07:47:13 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'v0503sah_newusr'@'localhost' (using password: YES) in /home/w1222sah/public_html/file_manager/connection/dbcon.php on line 2
+[22-Dec-2022 07:47:13 UTC] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/w1222sah/public_html/file_manager/connection/dbcon.php on line 2
+[24-Dec-2022 17:41:39 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home/w1222sah/public_html/connection/dbcon.php on line 2
+[24-Dec-2022 17:41:40 UTC] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/w1222sah/public_html/connection/dbcon.php on line 2
+[17-Jan-2023 09:27:27 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home/w1222sah/public_html/connection/dbcon.php on line 2
+[17-Jan-2023 09:27:27 UTC] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/w1222sah/public_html/connection/dbcon.php on line 2
+[17-Jan-2023 09:27:27 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home/w1222sah/public_html/connection/dbcon.php on line 2
+[17-Jan-2023 09:27:27 UTC] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/w1222sah/public_html/connection/dbcon.php on line 2
+[17-Jan-2023 09:27:27 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home/w1222sah/public_html/connection/dbcon.php on line 2
+[17-Jan-2023 09:27:27 UTC] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/w1222sah/public_html/connection/dbcon.php on line 2
+[17-Jan-2023 09:27:29 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home/w1222sah/public_html/connection/dbcon.php on line 2
+[17-Jan-2023 09:27:29 UTC] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/w1222sah/public_html/connection/dbcon.php on line 2
+[17-Jan-2023 09:28:13 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home/w1222sah/public_html/connection/dbcon.php on line 2
+[17-Jan-2023 09:28:13 UTC] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/w1222sah/public_html/connection/dbcon.php on line 2
+[17-Jan-2023 09:28:13 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home/w1222sah/public_html/connection/dbcon.php on line 2
+[17-Jan-2023 09:28:13 UTC] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/w1222sah/public_html/connection/dbcon.php on line 2
+[17-Jan-2023 09:28:13 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home/w1222sah/public_html/connection/dbcon.php on line 2
+[17-Jan-2023 09:28:13 UTC] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/w1222sah/public_html/connection/dbcon.php on line 2
+[17-Jan-2023 09:28:13 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home/w1222sah/public_html/connection/dbcon.php on line 2
+[17-Jan-2023 09:28:13 UTC] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/w1222sah/public_html/connection/dbcon.php on line 2
+[17-Jan-2023 09:28:13 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home/w1222sah/public_html/connection/dbcon.php on line 2
+[17-Jan-2023 09:28:13 UTC] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/w1222sah/public_html/connection/dbcon.php on line 2
+[17-Jan-2023 09:28:13 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home/w1222sah/public_html/connection/dbcon.php on line 2
+[17-Jan-2023 09:28:13 UTC] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/w1222sah/public_html/connection/dbcon.php on line 2
+[17-Jan-2023 09:28:13 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home/w1222sah/public_html/connection/dbcon.php on line 2
+[17-Jan-2023 09:28:13 UTC] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/w1222sah/public_html/connection/dbcon.php on line 2
+[17-Jan-2023 09:28:13 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home/w1222sah/public_html/connection/dbcon.php on line 2
+[17-Jan-2023 09:28:13 UTC] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/w1222sah/public_html/connection/dbcon.php on line 2
+[17-Jan-2023 09:28:54 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home/w1222sah/public_html/connection/dbcon.php on line 2
+[17-Jan-2023 09:28:58 UTC] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/w1222sah/public_html/connection/dbcon.php on line 2
+[17-Jan-2023 09:31:31 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home/w1222sah/public_html/connection/dbcon.php on line 2
+[17-Jan-2023 09:31:35 UTC] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/w1222sah/public_html/connection/dbcon.php on line 2
+[17-Jan-2023 09:31:31 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home/w1222sah/public_html/connection/dbcon.php on line 2
+[17-Jan-2023 09:31:31 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home/w1222sah/public_html/connection/dbcon.php on line 2
+[17-Jan-2023 09:31:35 UTC] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/w1222sah/public_html/connection/dbcon.php on line 2
+[17-Jan-2023 09:31:35 UTC] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/w1222sah/public_html/connection/dbcon.php on line 2
+[17-Jan-2023 09:32:41 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home/w1222sah/public_html/connection/dbcon.php on line 2
+[17-Jan-2023 09:32:41 UTC] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/w1222sah/public_html/connection/dbcon.php on line 2
+[17-Jan-2023 09:32:41 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home/w1222sah/public_html/connection/dbcon.php on line 2
+[17-Jan-2023 09:32:41 UTC] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/w1222sah/public_html/connection/dbcon.php on line 2
+[17-Jan-2023 09:33:24 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home/w1222sah/public_html/connection/dbcon.php on line 2
+[17-Jan-2023 09:33:24 UTC] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/w1222sah/public_html/connection/dbcon.php on line 2
+[17-Jan-2023 09:33:24 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home/w1222sah/public_html/connection/dbcon.php on line 2
+[17-Jan-2023 09:33:24 UTC] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/w1222sah/public_html/connection/dbcon.php on line 2
+[17-Jan-2023 09:37:35 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home/w1222sah/public_html/connection/dbcon.php on line 2
+[17-Jan-2023 09:37:36 UTC] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/w1222sah/public_html/connection/dbcon.php on line 2
+[17-Jan-2023 09:40:37 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home/w1222sah/public_html/connection/dbcon.php on line 2
+[17-Jan-2023 09:40:37 UTC] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/w1222sah/public_html/connection/dbcon.php on line 2
+[17-Jan-2023 09:40:37 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home/w1222sah/public_html/connection/dbcon.php on line 2
+[17-Jan-2023 09:40:37 UTC] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/w1222sah/public_html/connection/dbcon.php on line 2
+[17-Jan-2023 09:43:52 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home/w1222sah/public_html/connection/dbcon.php on line 2
+[17-Jan-2023 09:43:52 UTC] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/w1222sah/public_html/connection/dbcon.php on line 2
+[17-Jan-2023 09:44:25 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home/w1222sah/public_html/connection/dbcon.php on line 2
+[17-Jan-2023 09:44:25 UTC] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/w1222sah/public_html/connection/dbcon.php on line 2
+[19-Jan-2023 07:06:00 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home/w1222sah/public_html/connection/dbcon.php on line 2
+[19-Jan-2023 07:06:00 UTC] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/w1222sah/public_html/connection/dbcon.php on line 2
+[31-Jan-2023 07:07:06 UTC] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/w1222sah/public_html/login.php on line 7
