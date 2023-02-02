@@ -37,7 +37,7 @@
 								$prt=$row['trns_per']; $prtur=$row['trns_rptno']; $prtimage=$row['trns_pic'];
 								
 								?>
-								<? if($edit_emplnumber!=''){ $image='0';?> 
+								<?php if($edit_emplnumber!=''){ $image='0';?> 
 								<form method="post" enctype="multipart/form-data">
 									
 										<div class="control-group">
@@ -55,7 +55,7 @@
                                        
                                 
                                       
-    <? $query1 = mysqli_query($conn,"SELECT * FROM `ndc` WHERE `tin_number`='$edit_emplnumber' and `ndc_stj`='4' ")or die(mysqli_error());
+    <?php $query1 = mysqli_query($conn,"SELECT * FROM `ndc` WHERE `tin_number`='$edit_emplnumber' and `ndc_stj`='4' ")or die(mysqli_error());
 								$row1 = mysqli_fetch_array($query1); ?>
 								
 								        <div class="control-group">
@@ -71,7 +71,7 @@
                                          </div>
                                          
                                         <div class="control-group" align="center">
-                                          <? echo "<img src='uploads_transfer/$image' class='thumbnail' width='10' height='10'  >"; ?>	
+                                          <?php echo "<img src='uploads_transfer/$image' class='thumbnail' width='10' height='10'  >"; ?>	
                                         </div>  
                                         
                                         
@@ -89,7 +89,7 @@
                                         </div>
                                       
                                 </form>
-									<? }	?>
+									<?php }	?>
 								</div>
                             </div>
                         </div>

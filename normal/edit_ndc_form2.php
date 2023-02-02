@@ -108,13 +108,13 @@
                                 <td><?php  echo $row['ndc_rpt'];  $image=$row['ndc_urgpic']; ?> 
                                 
                                 
-    <? echo "<img src='uploads_ndc/$image' class='thumbnail' width='10' height='10'  >";  ?>	</td>
+    <?php echo "<img src='uploads_ndc/$image' class='thumbnail' width='10' height='10'  >";  ?>	</td>
     
                                
     <td><?php  $image1=$row['ndc_waveoffpic'];?> 
                                 
                                 
-    <? echo "<img src='uploads_waveoff/$image1' class='thumbnail' width='10' height='10'  >";  $sno=$sno+1;}?>	</td>
+    <?php echo "<img src='uploads_waveoff/$image1' class='thumbnail' width='10' height='10'  >";  $sno=$sno+1;}?>	</td>
     
                                  
       </table>

@@ -108,12 +108,12 @@
                                 <td><?php  echo $row['dat'];   ?> </td>
                                 <td><?php  echo $row['ver_per'];?> </td>
                                 <td><?php  echo $row['ver_urgrpt'];   $image=$row['ver_urgpic']; ?> 
-    <? echo "<img src='uploads_ver/$image' class='thumbnail' width='10' height='10'  >";  ?>	
+    <?php echo "<img src='uploads_ver/$image' class='thumbnail' width='10' height='10'  >";  ?>	
                             
                                 </td>
                                 
                                 <td><?php   $image1=$row['ver_letigationpic']; ?> 
-    <? echo "<img src='uploads_letigation/$image1' class='thumbnail' width='10' height='10'  >";  $sno=$sno+1;}?>	
+    <?php echo "<img src='uploads_letigation/$image1' class='thumbnail' width='10' height='10'  >";  $sno=$sno+1;}?>	
                             
                                 </td>
                                  

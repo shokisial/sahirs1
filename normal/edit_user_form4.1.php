@@ -30,7 +30,7 @@
 								
 								$woff=$row['ndc_waveoff']; $waveimage=$row['ndc_waveoffpic'];
 								?>
-								<? if($edit_emplnumber!=''){ $image='0';?> 
+								<?php if($edit_emplnumber!=''){ $image='0';?> 
 								<form method="post" enctype="multipart/form-data">
 									
 										<div class="control-group">
@@ -65,7 +65,7 @@
 							            </div>
                                         
                                         <div class="control-group" align="center">
-                                          <? echo "<img src='uploads_ndc/$image' class='thumbnail' width='10' height='10'  >"; ?>	
+                                          <?php echo "<img src='uploads_ndc/$image' class='thumbnail' width='10' height='10'  >"; ?>	
                                         </div>  
                                         
                                         <div class="control-group">
@@ -83,14 +83,14 @@
 								            N.D.C Urgent Reciept No. Missing
 								            <input type="number" name="rpturgno" id="rpturgno" required>
 										</div>
-										<? } ?>  
+										<?php } ?>  
 										
 									<?	if($prt==='Urgent' and $prtimage==='0' ) {  ?>
 								        <div class="control-group">
 								            Upload Reciept Picture incase Urgent Verification Picture Missing
 								            <input type="file" name="uploadfile" id="uploadfile" required>
 										</div>
-										<? } ?>  
+										<?php } ?>  
 										
 										
 										
@@ -99,7 +99,7 @@
 								            Upload Wave OFF Amount Picture Missing
 								            <input type="file" name="uploadfile1" id="uploadfile1" required>
 										</div>
-										<? } ?>  
+										<?php } ?>  
 										
 											<div class="control-group">
                                           <div class="controls">
@@ -109,7 +109,7 @@
                                         </div>
                                       
                                 </form>
-									<? }	?>
+									<?php }	?>
 								</div>
                             </div>
                         </div>

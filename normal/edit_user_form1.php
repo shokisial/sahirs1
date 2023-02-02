@@ -39,7 +39,7 @@
 								$v_num=$row200['ver_id'];
 								
 								?>
-								<? if($edit_emplnumber!=''){ ?>
+								<?php if($edit_emplnumber!=''){ ?>
 								<form method="post" enctype="multipart/form-data">
 									
 									    <div class="control-group">
@@ -92,9 +92,9 @@
 													$user_query1 = mysqli_query($conn,"select * from dealertbl where active='0' order by d_name Asc")or die(mysqli_error());
 													while($row1 = mysqli_fetch_array($user_query1)){
 												 ?>
-                                             	<option value ="<? echo $row1['d_code']; ?> "> <? echo $row1['d_name']; ?></option>
+                                             	<option value ="<?php echo $row1['d_code']; ?> "> <?php echo $row1['d_name']; ?></option>
 												
-											<?  } ?>
+											<?php  } ?>
                                             </select>
                                           </div>
                                         </div>
@@ -122,7 +122,7 @@
                                           </div>
                                         </div>
                                 </form>
-								<? }	?>
+								<?php }	?>
 								</div>
                             </div>
                         </div>
@@ -228,7 +228,7 @@ echo 'File Verification Sucessfully';
 <script>
   window.location = "edit_user1.php"; 
 </script>
-<? } ?> 
+<?php } ?> 
 
 </body></html>
 

@@ -35,41 +35,41 @@
 								$edit_status = $row['status'];
 								$edit_emplnumber = $row['tin_number'];
 								?>
-								<? if($edit_emplnumber!=''){ $image='0';?> 
+								<?php if($edit_emplnumber!=''){ $image='0';?> 
 								<form method="post" enctype="multipart/form-data">
 								
 							
 										
 										 <?php  echo 'File' . '  = ' . '     ' . $edit_emplnumber . '  - '  ?>
 										
-								<br> Plot # =<input type="text" name="plot" value="<? echo $row['plot_no'] ; ?>" >
+								<br> Plot # =<input type="text" name="plot" value="<?php echo $row['plot_no'] ; ?>" >
                             	 
-								<br>	Block =	<input type="text" name="block" value="<? echo $row['block'] ; ?>" >
+								<br>	Block =	<input type="text" name="block" value="<?php echo $row['block'] ; ?>" >
                             	 <?php  echo 'Name ' .  '  =   ' ;
 										?> 		
-									  <input type="text" name="name" value="<? echo $row['file_name'] ;?>"  style="text-transform: uppercase">
-									  
+									  <input type="text" name="name" value="<?php echo $row['file_name'] ;?>"  style="text-transform: uppercase">
+									<br>  
 								<?php  echo 'S/O ' .  '  =   ' ;
 										?> 		
-									  <input type="text" name="gdn" value="<? echo $row['so'] ;?>" >
+									  <input type="text" name="gdn" value="<?php echo $row['so'] ;?>" >
 									  
 									
                                         
-									S/W/D=	<input type="text" name="fname" value="<? echo $row['fathername'];  ?>" style="text-transform: uppercase">
+									S/W/D=	<input type="text" name="fname" value="<?php echo $row['fathername'];  ?>" style="text-transform: uppercase">
                                          
                                          
 								    Adress 
-								    <input type="text" rows="5" cols="50" name="adr" value="<? echo $row['address']; ?>" style="text-transform: uppercase">
-								  <br>City  = <input type="text" name="city" value="<? echo $row['city'] ;  ?>" > 
+								    <input type="text" rows="5" cols="50" name="adr" value="<?php echo $row['address']; ?>" style="text-transform: uppercase">
+								  <br>City  = <input type="text" name="city" value="<?php echo $row['city'] ;  ?>" > 
                                     
                                       
-                                 <br>CNIC #<input type="text" name="cn" value="<? echo $row['cnicno'] ;  ?>" > 
+                                 <br>CNIC #<input type="text" name="cn" value="<?php echo $row['cnicno'] ;  ?>" > 
                                    
-                                <br> Size  <input type="text" name="size" value="<? echo $row['cat'] ;  ?>" > 
+                                <br> Size  <input type="text" name="size" value="<?php echo $row['cat'] ;  ?>" > 
                                
-                                <br> Ctegry <input type="text" name="cat" value="<? echo $row['file_category'] ;  ?>" > 
+                                <br> Ctegry <input type="text" name="cat" value="<?php echo $row['file_category'] ;  ?>" > 
                                  
-                                    <br>Contact<input type="text" name="cntno" value="<? echo $row['cnt_no'] ;  ?>" > 
+                                    <br>Contact<input type="text" name="cntno" value="<?php echo $row['cnt_no'] ;  ?>" > 
                                     
                                 	<div class="controls">
                                             <select name="type"  class="" onchange="showfield(this.options[this.selectedIndex].value)"  required>
@@ -81,19 +81,19 @@
                                    
                                    
                                         <div id="div1">
-                                        <div>Joint Name. <input type="text" name="jbname" value="<? echo $row['jfile_name'] ;  ?>"  style="text-transform: uppercase" required><br>
+                                        <div>Joint Name. <input type="text" name="jbname" value="<?php echo $row['jfile_name'] ;  ?>"  style="text-transform: uppercase" required><br>
                                         </div>
                                         
                                         <?php  echo 'Joint S/O' ;
 										?> 		
-									  <input type="text" name="jgdn" value="<? echo $row['jso'] ;?>" >
+									  <input type="text" name="jgdn" value="<?php echo $row['jso'] ;?>" >
 									  
 									  
                                         
                                        
                                        <div class="control-group">
 										 Joint Father/Husband Name	
-                                          <input type="text" name="jfname"   value="<? echo $row['jfathername'] ;  ?>" style="text-transform: uppercase" required> 
+                                          <input type="text" name="jfname"   value="<?php echo $row['jfathername'] ;  ?>" style="text-transform: uppercase" required> 
                                           </div>
                                           <div class="control-group">
 										 Joint Address	
@@ -103,17 +103,17 @@
                                         
                                         Joint City
 								        <div class="control-group">
-                                          <input type="text" name="jcity"   value="<? echo $row['jcity'] ;  ?>" style="text-transform: uppercase" required> 
+                                          <input type="text" name="jcity"   value="<?php echo $row['jcity'] ;  ?>" style="text-transform: uppercase" required> 
                                         </div>
                                         
                                        
                                         <div class="control-group">
 										Joint CNIC #	
-                                          <input type="text" name="jcnic"   value="<? echo $row['jcnicno'] ;  ?>"  required> 
+                                          <input type="text" name="jcnic"   value="<?php echo $row['jcnicno'] ;  ?>"  required> 
                                           </div>
                                         Joint Contact No  
 								        <div class="control-group">
-                                          <input type="text" name="jcntno"   value="<? echo $row['jcnt_no'] ;  ?>"  required> 
+                                          <input type="text" name="jcntno"   value="<?php echo $row['jcnt_no'] ;  ?>"  required> 
                                         </div>
                                         
                                         </div>
@@ -127,7 +127,7 @@
                                         </div>
                                       
                                 </form>
-									<? }	?>
+									<?php }	?>
 								</div>
                             </div>
                         </div>

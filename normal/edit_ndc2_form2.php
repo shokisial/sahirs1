@@ -35,7 +35,7 @@
 								$prtimage=$row['ndc_urgpic']
 								
 								?>
-								<? if($edit_emplnumber!=''){ ?>
+								<?php if($edit_emplnumber!=''){ ?>
 								<form method="post">
 									
 										<div class="control-group">
@@ -67,22 +67,22 @@
                                           
                                           
                                         
-                                        <? if($pr==='Urgent'){     ?>
+                                        <?php if($pr==='Urgent'){     ?>
                                         <div class="control-group" align="center">
-                                          <? echo "<img src='uploads_ndc/$prtimage' class='thumbnail' width='10' height='10'  >"; ?>	
+                                          <?php echo "<img src='uploads_ndc/$prtimage' class='thumbnail' width='10' height='10'  >"; ?>	
                                         </div>  
-                                        <? } ?>
+                                        <?php } ?>
                                         
                                         <div class="control-group">
 										  Wave OFF Status : 
                                             <?php echo '   ' . $row['ndc_waveoff'] ; $nwo= $row['ndc_waveoff'] ;  $nwop= $row['ndc_waveoffpic'] ;?>
                                           </div>
                                           
-                                        <? if($nwo==='Wave OFF'){     ?>
+                                        <?php if($nwo==='Wave OFF'){     ?>
                                         <div class="control-group" align="center">
-                                          <? echo "<img src='uploads_waveoff/$nwop' class='thumbnail' width='10' height='10'  >"; ?>	
+                                          <?php echo "<img src='uploads_waveoff/$nwop' class='thumbnail' width='10' height='10'  >"; ?>	
                                         </div>  
-                                        <? } ?>
+                                        <?php } ?>
                                         
                                             <div class="control-group">
 											<label>N.D.C Action:</label>
@@ -108,7 +108,7 @@
                                           </div>
                                         </div>
                                 </form>
-								<? } ?>
+								<?php } ?>
 								</div>
                             </div>
                         </div>
@@ -177,10 +177,10 @@ echo 'N.D.C Sucessfully';
  <script>
   window.location = "edit_ndc2.php"; 
 </script>
-<? } ?> 
+<?php } ?> 
 
 </body></html>
-<? /*
+<?php /*
 
  <?php  $from1=0;  
 			$user_query2 = mysqli_query($conn,"select * from staff where username='$user_name'")or die(mysqli_error());

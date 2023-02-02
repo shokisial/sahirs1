@@ -69,9 +69,9 @@
 													$user_query1 = mysqli_query($conn,"select * from dealertbl")or die(mysqli_error());
 													while($row1 = mysqli_fetch_array($user_query1)){
 												 ?>
-                                             	<option value ="<? echo $row1['d_code']; ?> "> <? echo $row1['d_name']; ?></option>
+                                             	<option value ="<?php echo $row1['d_code']; ?> "> <?php echo $row1['d_name']; ?></option>
 												
-											<?  } ?>
+											<?php  } ?>
                                             </select>
                                           </div>
                                         </div>
@@ -141,10 +141,10 @@ echo 'Open File  Sucessfully';
  <script>
   window.location = "edit_openfile1.php"; 
 </script>
-<? } ?> 
+<?php } ?> 
 
 </body></html>
-<? /*
+<?php /*
 
  <?php  $from1=0;  
 			$user_query2 = mysqli_query($conn,"select * from staff where username='$user_name'")or die(mysqli_error());

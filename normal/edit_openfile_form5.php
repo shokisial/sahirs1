@@ -25,7 +25,7 @@
                             <div class="block-content collapse in">
                                 <div >
 								
-							 <?
+							 <?php
                                 $edit_emplnumber=0; 
 								$query = mysqli_query($conn,"select * from file where file_id='$get_id'")or die(mysqli_error());
 								$row = mysqli_fetch_array($query);
@@ -42,29 +42,29 @@
 								
 								
 								?>
-								<? if($edit_emplnumber!=''){ ?>
+								<?php if($edit_emplnumber!=''){ ?>
 								<form method="post" enctype="multipart/form-data">
-									    <b> File_number = <? echo ' ' .  $edit_emplnumber . ' - '  . 'Form # ' . $form  ?> <Br>
-									    <b>  Plot_number = <? echo ' ' .  $edit_lastname1 . ' ' . '/' .  $edit_firstname  ?> 
-                                        <? } ?>
-                                        <input type="hidden" name="tin_no"  value="<? echo $edit_emplnumber; ?>" > 
+									    <b> File_number = <?php echo ' ' .  $edit_emplnumber . ' - '  . 'Form # ' . $form  ?> <Br>
+									    <b>  Plot_number = <?php echo ' ' .  $edit_lastname1 . ' ' . '/' .  $edit_firstname  ?> 
+                                        <?php } ?>
+                                        <input type="hidden" name="tin_no"  value="<?php echo $edit_emplnumber; ?>" > 
                                         
 										<div class="control-group">
 										<b> Block </b>    
-                                        <input type="text" name="block"  value="<? echo $edit_lastname; ?>"  required><br> 
+                                        <input type="text" name="block"  value="<?php echo $edit_lastname; ?>"  required><br> 
                                         <b> Size </b><br>
-                                        <input type="text" name="size"  value="<? echo $size; ?>"  required> 
+                                        <input type="text" name="size"  value="<?php echo $size; ?>"  required> 
                                        
                                         <div class="control-group">
                                             <b> Category </b>
-                                          <input type="text" name="cat"  value="<? echo $category; ?>" required> 
+                                          <input type="text" name="cat"  value="<?php echo $category; ?>" required> 
                                         <br> <b> Booking Ref </b>
-                                         <input type="text" name="book" value="<? echo $booking_ref; ?>"  required> 
+                                         <input type="text" name="book" value="<?php echo $booking_ref; ?>"  required> 
                                           </div>
                                        
                                         <div class="control-group">
 										 <b> Factor </b>
-                                          <input type="text" name="fector"  value="<? echo $fector; ?>"  required> 
+                                          <input type="text" name="fector"  value="<?php echo $fector; ?>"  required> 
                                        
                                         </div>
                                         
@@ -109,10 +109,10 @@ echo 'Open File  Sucessfully';
  <script>
   window.location = "edit_openfile5.php"; 
 </script>
-<? } ?> 
+<?php } ?> 
 
 </body></html>
-<? /*
+<?php /*
 
  <?php  $from1=0;  
 			$user_query2 = mysqli_query($conn,"select * from staff where username='$user_name'")or die(mysqli_error());
@@ -140,7 +140,7 @@ echo 'Open File  Sucessfully';
 <?php
 }  
 //Mail
-
+*/
 ?>
 
 

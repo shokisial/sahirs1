@@ -33,7 +33,7 @@
 								$cat= $row['file_category'];
 								$size= $row['cat'];
 								?>
-								<? if($edit_emplnumber!=''){ $image='0.jpg';?>
+								<?php if($edit_emplnumber!=''){ $image='0.jpg';?>
 								<form method="post" enctype="multipart/form-data">
 									
 										<div class="control-group">
@@ -62,7 +62,7 @@
 							            </div>
                                         
                                         <div class="control-group" align="center">
-                                          <? echo "<img src='uploads_ver/$image' class='thumbnail' width='10' height='10'  >"; ?>	
+                                          <?php echo "<img src='uploads_ver/$image' class='thumbnail' width='10' height='10'  >"; ?>	
                                         </div>  
                                             
 										<div class="control-group">
@@ -98,7 +98,7 @@
                                           </div>
                                         </div>
                                 </form>
-									<? }	?>
+									<?php }	?>
 								</div>
                             </div>
                         </div>

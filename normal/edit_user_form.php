@@ -21,7 +21,7 @@
 								$ct=$row['file_category']; 
 								?>
 								
-							    <? if($edit_emplnumber!=''){ ?>
+							    <?php if($edit_emplnumber!=''){ ?>
 								<form method="post">
 									
 										<div class="control-group">
@@ -54,9 +54,9 @@
 													$user_query1 = mysqli_query($conn,"select * from staff where auth='1' ")or die(mysqli_error());
 													while($row1 = mysqli_fetch_array($user_query1)){
 												 ?>
-                                             	<option value ="<? echo $row1['staff_id']; ?> "> <? echo $row1['username']; ?></option>
+                                             	<option value ="<?php echo $row1['staff_id']; ?> "> <?php echo $row1['username']; ?></option>
 												
-											<?  } ?>
+											<?php  } ?>
                                             </select>
                                           </div>
                                         </div>
@@ -70,7 +70,7 @@
                                           </div>
                                         </div>
                                 </form>
-								<? } ?>
+								<?php } ?>
 								</div>
                             </div>
                         </div>

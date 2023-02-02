@@ -2,7 +2,7 @@
 <?php include('../session.php'); ?>
 <?php $get_id = $_GET['id']; ?>
        <body>
-		<?php include('navbar.php'); ?>
+		<?php  include('navbar.php'); ?>
         <div class="container-fluid">
             <div class="row-fluid">
 				<?php include('borrow_sidebar.php'); ?>

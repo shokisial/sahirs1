@@ -18,33 +18,21 @@
 });
  </script>
  </head>
- <body>
-
-
-<? /*  
-                      <li> <a href="dashboard.php"><i class="icon-chevron-right"></i><i class="icon-home"></i>&nbsp;Dashboard</a> </li>
-					<li class="active">
-                            <a href="edit_user.php"><i class="icon-chevron-right"></i><i class="icon-file"></i>Borrow File</a>
-                        </li>
-						<li> class="active"
-                            <a href="return_file.php"><i class="icon-chevron-right"></i><i class="icon-file"></i>Return File</a>
-                        </li>
-					*/ ?>	
-					
+ <body>		
 
  <div class="span2" id="sidebar">
                     <ul class="nav nav-list bs-docs-sidenav nav-collapse collapse">
                     
-						<? if($session_id==='0') { ?>
+						<?php if($session_id==='0') { ?>
                         
                             <li>
                             <a href="user_report.php" ><i class="icon-chevron-left"></i><i class="icon-file"></i>Issued Files</a>
                         </li>
                         <li>
                             <a href="edit_user.php"><i class="icon-chevron-left"></i><i class="icon-file"></i>Borrow File</a>
-                            <? } ?>
+                            <?php } ?>
                             
-                        <? if($session_id==='1') { ?>
+                        <?php if($session_id==='1') { ?>
                         <li >
                             <a href="edit_user.php"><i class="icon-chevron-right"></i><i class="icon-file"></i>Borrow File</a>
                             <a href="edit_user_edit.php"><i class="icon-chevron-right"></i><i class="icon-file"></i>Edit Record</a>
@@ -52,7 +40,7 @@
                             <a href="edit_openfile5.php"><i class="icon-chevron-right"></i><i class="icon-file"></i>Open Form Inventory</a>
                             <li >
                             <a href="edit_openfile1.php"><i class="icon-chevron-right"></i><i class="icon-file"></i>Open Form Ready Edit File</a> </li>
-                         <? } ?>   
+                         <?php } ?>   
                         <? if($session_id==='7' or $session_id==='1' ) { ?>
                         <li>
                             <a href="user_report.php" ><i class="icon-chevron-right"></i><i class="icon-file"></i>Issued Files</a>
@@ -280,7 +268,7 @@
                             <a href="edit_user6.1.php"><i class="icon-chevron-right"></i><i class="icon-file"></i>N.D.C Clear </a>
                         </li>
                         
-                        <? /*
+                        <?php /*
                         <li>
                             <a href="edit_user5.1.php"><i class="icon-chevron-right"></i><i class="icon-file"></i>Transfer File</a>
                         </li> */ ?>
@@ -326,7 +314,7 @@
                     </ul>
                 </div>
                 
-<? /*
+<?php /*
 <li >
                             <a href="files_in.php"><i class="icon-chevron-right"></i><i class="icon-file"></i>Files In Possesion (
 							<?php 

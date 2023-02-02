@@ -80,7 +80,7 @@
                                           </div>
                                           
                                         <div class="control-group">
-										<? echo $gdn . ' : '; ?> 
+										<?php echo $gdn . ' : '; ?> 
                                         <?php echo  '  ' . $fathername; ?>
                                           </div>
 										<div class="control-group">
@@ -96,14 +96,14 @@
 										Contact No : 
                                         <?php echo  '  ' .  $cntno; ?>
                                           </div>
-                                        <? if ($typ==='Joint') { ?>
+                                        <?php if ($typ==='Joint') { ?>
                                         <div class="control-group">
 										Joint Name : 
                                         <?php echo  '  ' . $jbuyername; ?>
                                           </div>
                                           
                                         <div class="control-group">
-										<? echo $jgdn . ' : '; ?> 
+										<?php echo $jgdn . ' : '; ?> 
                                         <?php echo  '  ' . $jfathername; ?>
                                           </div>
 										<div class="control-group">
@@ -119,7 +119,7 @@
 										Joint Contact : 
                                         <?php echo  '  ' .  $jcntno; ?>
                                           </div> 
-                                          <? } ?>
+                                          <?php } ?>
                                          <div class="control-group">
 										NDC No : 
                                         <?php echo  '  ' . $ndc_no;   ?>
@@ -203,7 +203,7 @@
                                       
                                      
 										
-                                        <? } ?>
+                                        <?php } ?>
                                         
                                         
                                 </form>
@@ -250,10 +250,10 @@ echo 'File Issue Sucessfully';
  <script>
   window.location = "edit_transfer1.1.php"; 
 </script>
-<? } ?> 
+<?php } ?> 
 
 </body></html>
-<? /*
+<?php /*
 
  <?php  $from1=0;  
 			$user_query2 = mysqli_query($conn,"select * from staff where username='$user_name'")or die(mysqli_error());

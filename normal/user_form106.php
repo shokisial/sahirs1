@@ -39,7 +39,7 @@
 								$trns_dat=$row['trns_dat'];
 								
 								?>
-								<? if($edit_emplnumber!=''){ $image='0';?> 
+								<?php if($edit_emplnumber!=''){ $image='0';?> 
 								<form method="post" enctype="multipart/form-data">
 									
 										<div class="control-group">
@@ -74,7 +74,7 @@
                                         </div>
                                       
                                 
-									<? }	?>
+									<?php }	?>
 								</div>
                             </div>
                         </div>

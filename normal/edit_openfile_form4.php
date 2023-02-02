@@ -38,26 +38,26 @@
 								$jcnic=$row['jcnicno'];
 								$jadd=$row['jaddress'];
 								?>
-								<? if($edit_emplnumber!=''){ ?>
+								<?php if($edit_emplnumber!=''){ ?>
 								<form method="post" enctype="multipart/form-data">
-									    File_number = <? echo ' ' .  $edit_emplnumber ?> <Br>
-									    Plot_number = <? echo ' ' .  $edit_lastname . ' ' . '/' .  $edit_firstname  ?> 
+									    File_number = <?php echo ' ' .  $edit_emplnumber ?> <Br>
+									    Plot_number = <?php echo ' ' .  $edit_lastname . ' ' . '/' .  $edit_firstname  ?> 
 									    <br>
-									   File_Name = <? echo ' ' .  $flnm ?> <Br>
+									   File_Name = <?php echo ' ' .  $flnm ?> <Br>
 									   
-									   Father Name = <? echo ' ' .  $fname ?> <Br>
+									   Father Name = <?php echo ' ' .  $fname ?> <Br>
 									   
-									   CNIC # = <? echo ' ' .  $cnic ?> <Br>
+									   CNIC # = <?php echo ' ' .  $cnic ?> <Br>
 									   
-                                       Address = <? echo ' ' .  $add?> <Br>
+                                       Address = <?php echo ' ' .  $add?> <Br>
                                         
-									   Joint File_Name = <? echo ' ' .  $jflnm ?> <Br>
+									   Joint File_Name = <?php echo ' ' .  $jflnm ?> <Br>
 									   
-									   Joint Father Name = <? echo ' ' .  $jfname ?> <Br>
+									   Joint Father Name = <?php echo ' ' .  $jfname ?> <Br>
 									   
-									   Joint CNIC # = <? echo ' ' .  $jcnic ?> <Br>
+									   Joint CNIC # = <?php echo ' ' .  $jcnic ?> <Br>
 									   
-                                       Joint Address = <? echo ' ' .  $jadd?> <Br>                    
+                                       Joint Address = <?php echo ' ' .  $jadd?> <Br>                    
                 
                                                         
 										
@@ -68,7 +68,7 @@
                                         
                                           </div>
                                         </div>
-                                        <? } ?>
+                                        <?php } ?>
                                 </form>
 								
 								</div>
@@ -124,10 +124,10 @@ echo 'Open File Clear by Urooj Sucessfully';
  <script>
   window.location = "edit_openfile4.php"; 
 </script>
-<? } ?> 
+<?php } ?> 
 
 </body></html>
-<? /*
+<?php /*
 
  <?php  $from1=0;  
 			$user_query2 = mysqli_query($conn,"select * from staff where username='$user_name'")or die(mysqli_error());

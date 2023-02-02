@@ -34,7 +34,7 @@
 							
 								$image=0; $image=$row['trns_pic'];
 								?>
-								<? if($edit_emplnumber!=''){ ?>
+								<?php if($edit_emplnumber!=''){ ?>
 								<form method="post">
 									
 										<div class="control-group">
@@ -59,7 +59,7 @@
                                           
                                           
                                         
-										<? if($per==='Urgent') { echo "<img src='uploads_transfer/$image' class='thumbnail' width='10' height='10'  >"; } ?>
+										<?php if($per==='Urgent') { echo "<img src='uploads_transfer/$image' class='thumbnail' width='10' height='10'  >"; } ?>
                                             <div class="control-group">
 											<label>Transfer Action:</label>
 											
@@ -84,18 +84,18 @@
                                           </div>
                                         </div>
                                 </form>
-								<? } ?>
+								<?php } ?>
 								</div>
                             </div>
                         </div>
                         
-                        <? $image1=0; $query1 = mysqli_query($conn,"select * from `transtbl` where tin_number= '$edit_emplnumber' and trns_stj='1'")or die(mysqli_error());
+                        <?php $image1=0; $query1 = mysqli_query($conn,"select * from `transtbl` where tin_number= '$edit_emplnumber' and trns_stj='1'")or die(mysqli_error());
 								$row1 = mysqli_fetch_array($query1);
 								{$image1=$row1['trns_pic'];}  ?>
                         <!-- /block -->
                     </div>
 					
-					<? echo "<img src='uploads_transfer/$image1' class='thumbnail' width='10' height='10'  >"; ?>
+					<?php echo "<img src='uploads_transfer/$image1' class='thumbnail' width='10' height='10'  >"; ?>
 					
 			<?php $tin_number=0; $ndcrpt=0;		
 if (isset($_POST['update'])){
@@ -183,7 +183,7 @@ echo 'Transfer Account Entry Sucessfully';
 <script>
   window.location = "edit_transfer4.php"; 
 </script>
- <? } ?>
+ <?php } ?>
 
 </body></html>
 

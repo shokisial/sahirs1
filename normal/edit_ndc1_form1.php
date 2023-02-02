@@ -98,7 +98,7 @@
                                             <?php $empno1 = date('Y/m/d'); echo '   ' .  'Expiry Date' . ' -  ' . $expdt ?>
                                           </div>
                                           
-                                      <? if($expdt>=$empno1){ ?>    
+                                      <?php if($expdt>=$empno1){ ?>    
 									<div class="control-group">
 											
                                           <input type="number" name="altno"  placeholder="Allocation / Allotment No"  required> 
@@ -224,9 +224,9 @@
 													$user_query1 = mysqli_query($conn,"select * from dealertbl where opn=1 and active='0'")or die(mysqli_error());
 													while($row1 = mysqli_fetch_array($user_query1)){
 												 ?>
-                                             	<option value ="<? echo $row1['d_code']; ?> "> <? echo $row1['d_name']; ?></option>
+                                             	<option value ="<?php echo $row1['d_code']; ?> "> <?php echo $row1['d_name']; ?></option>
 												
-											<?  } ?>
+											<?php  } ?>
                                             </select>
                                           </div>
                                         </div>   
@@ -270,7 +270,7 @@
                                           </div>
                                         </div>
                                 </form>
-							<? } 
+							<?php } 
 							else { ?>
 							<form method="post" enctype="multipart/form-data">
 								
@@ -287,15 +287,15 @@
 
                                           </div>
                                         </div> </form> 
-						<? }?>
+						<?php }?>
 						
-						<? }?>
+						<?php }?>
 								</div>
                             </div>
                         </div>
                         <!-- /block -->
                     </div>
-<? 
+<?php 
 if (isset($_POST['update123'])){
 $vrnno=0; $tin_number = $row['tin_number'];
 $vrno = $_POST['vrnno'];
@@ -318,7 +318,7 @@ mysqli_query($conn,"update verification set ver_exprnl = '$vrno',ver_exppic='$fi
 <script>
   window.location = "edit_ndc1.php"; 
 </script>
-<? } ?>
+<?php } ?>
 					
 			<?php $tin_number=0; $ndcrpt=0;	$filename=0; $filename1=0; 	
 if (isset($_POST['update'])){
@@ -378,7 +378,7 @@ if($type==='Open' and $ex==='0'){
   window.location = "edit_ndc1.php"; 
 </script>
     
-<? }
+<?php }
 else
 {
 
@@ -457,10 +457,10 @@ if (move_uploaded_file($tempname1, $folder1))  {
  <script>
   window.location = "edit_ndc1.php"; 
 </script>
-<? } }?> 
+<?php } }?> 
 
 </body></html>
-<? /*
+<?php /*
 
  <?php  $from1=0;  
 			$user_query2 = mysqli_query($conn,"select * from staff where username='$user_name'")or die(mysqli_error());

@@ -35,7 +35,7 @@
 								$edit_bname = $row['buyername'];
 								
 								?>
-								<? if($edit_emplnumber!=''){ $image='0';?> 
+								<?php if($edit_emplnumber!=''){ $image='0';?> 
 								<form method="post" enctype="multipart/form-data">
 									
 										<div class="control-group">
@@ -47,46 +47,46 @@
 										 <?php  echo 'Buyer ' . '  = ' ;
 										?> 
 										
-									  <input type="text" name="name" value="<? echo $row['file_name'] ;?>" style="text-transform: uppercase">
+									  <input type="text" name="name" value="<?php echo $row['file_name'] ;?>" style="text-transform: uppercase">
 										
-									Gardian	<input type="text" name="so" value="<? echo $row['so'] ;?>" style="text-transform: uppercase" >
+									Gardian	<input type="text" name="so" value="<?php echo $row['so'] ;?>" style="text-transform: uppercase" >
 										
-									Father Name	<input type="text" name="frn" value="<? echo $row['fathername'];  ?>" style="text-transform: uppercase">
+									Father Name	<input type="text" name="frn" value="<?php echo $row['fathername'];  ?>" style="text-transform: uppercase">
                                          </div>
                                          
-								    Address <input type="text" name="adr" value="<? echo $row['address'] ;  ?>" style="text-transform: uppercase" > 
+								    Address <input type="text" name="adr" value="<?php echo $row['address'] ;  ?>" style="text-transform: uppercase" > 
 								   <br>
-								   City <br><input type="text" name="cty" value="<? echo $row['city'] ;  ?>" style="text-transform: uppercase" > 
+								   City <br><input type="text" name="cty" value="<?php echo $row['city'] ;  ?>" style="text-transform: uppercase" > 
                                          
-                                    CNIC <input type="text" name="cn" value="<? echo $row['cnicno'] ;  ?>" style="text-transform: uppercase"> 
+                                    CNIC <input type="text" name="cn" value="<?php echo $row['cnicno'] ;  ?>" style="text-transform: uppercase"> 
                                     
                                     
-                                    Contact <input type="text" name="ctno" value="<? echo $row['cnt_no'] ;  ?>" style="text-transform: uppercase" > 
+                                    Contact <input type="text" name="ctno" value="<?php echo $row['cnt_no'] ;  ?>" style="text-transform: uppercase" > 
                                     
-                                 <?  /*  <p>     
-                                    TRNS Type <input type="text" name="tp" value="<? echo $row1['type'] ;  ?>" style="text-transform: uppercase" > */ ?>
+                                 <?php  /*  <p>     
+                                    TRNS Type <input type="text" name="tp" value="<?php echo $row1['type'] ;  ?>" style="text-transform: uppercase" > */ ?>
                                    
-                                   <? if ($row1['type']==='Joint') { ?>
+                                   <?php if ($row1['type']==='Joint') { ?>
                                    
                                     <p>  
                                     
-                                   Jnt Name <input type="text" name="jbrname" value="<? echo $row1['jbuyername'] ;?>" style="text-transform: uppercase" >
+                                   Jnt Name <input type="text" name="jbrname" value="<?php echo $row1['jbuyername'] ;?>" style="text-transform: uppercase" >
 								</p>
 								<p>	
-								   Jnt Gardian	<input type="text" name="jgd" value="<? echo $row1['jgdn'] ;?>">
+								   Jnt Gardian	<input type="text" name="jgd" value="<?php echo $row1['jgdn'] ;?>">
 								</P>		
-									Jnt F.Name	<input type="text" name="jfrn" value="<? echo $row1['jfathername'];  ?>" style="text-transform: uppercase" >
+									Jnt F.Name	<input type="text" name="jfrn" value="<?php echo $row1['jfathername'];  ?>" style="text-transform: uppercase" >
                                          
                                          
-								    Jnt Address <input type="text" name="jadr" value="<? echo $row1['jaddress'] ;  ?>" style="text-transform: uppercase" > 
+								    Jnt Address <input type="text" name="jadr" value="<?php echo $row1['jaddress'] ;  ?>" style="text-transform: uppercase" > 
                                          
-                                    Jnt CNIC <input type="text" name="jcn" value="<? echo $row1['jcnic'] ;  ?>" style="text-transform: uppercase" > 
+                                    Jnt CNIC <input type="text" name="jcn" value="<?php echo $row1['jcnic'] ;  ?>" style="text-transform: uppercase" > 
                                     
                                     <p>
-                                    Jnt Contact <input type="text" name="jctno" value="<? echo $row1['jcntno'] ;  ?>" style="text-transform: uppercase" > 
+                                    Jnt Contact <input type="text" name="jctno" value="<?php echo $row1['jcntno'] ;  ?>" style="text-transform: uppercase" > 
                                    </P>
                                    
-                                    <? } ?>
+                                    <?php } ?>
                                         
                                         <div class="control-group">
 											<label>File Issue Reason:</label>
@@ -122,7 +122,7 @@
                                         </div>
                                       
                                 </form>
-									<? }	?>
+									<?php }	?>
 								</div>
                             </div>
                         </div>

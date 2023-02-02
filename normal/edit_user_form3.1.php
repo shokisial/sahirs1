@@ -21,7 +21,7 @@
 								$prt=$row['ver_per']; $prtur=$row['ver_urgrpt']; $prtimage=$row['ver_urgpic'];
 								
 								?>
-								<? if($edit_emplnumber!=''){ $image='0'; $rp=0; ?> 
+								<?php if($edit_emplnumber!=''){ $image='0'; $rp=0; ?> 
 								<form method="post" enctype="multipart/form-data">
 									
 										<div class="control-group">
@@ -45,7 +45,7 @@
 							            </div>
                                         
                                         <div class="control-group" align="center">
-                                          <? echo "<img src='uploads_ver/$image' class='thumbnail' width='10' height='10'  >"; ?>	
+                                          <?php echo "<img src='uploads_ver/$image' class='thumbnail' width='10' height='10'  >"; ?>	
                                         </div>  
                                         
                                         <div class="control-group">
@@ -64,7 +64,7 @@
 								            Urgent Reciept # Missing
 								            <input type="number" name="rp" id="rp" required>
 										</div>
-										<? } ?>  
+										<?php } ?>  
 										
 										
 									<?	if($prt==='Urgent' and $prtimage==='0') {  ?>
@@ -72,7 +72,7 @@
 								            Upload Reciept Picture incase Urgent Verification Picture Missing
 								            <input type="file" name="uploadfile" id="uploadfile" required>
 										</div>
-										<? } ?>  
+										<?php } ?>  
 											<div class="control-group">
                                           <div class="controls">
 												<button name="update" class="btn btn-success"><i class="icon-save icon-large"></i></button>
@@ -81,7 +81,7 @@
                                         </div>
                                       
                                 </form>
-									<? }	?>
+									<?php }	?>
 								</div>
                             </div>
                         </div>

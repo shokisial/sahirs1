@@ -46,7 +46,7 @@
                             <div class="block-content collapse in">
                                 <div class="span6">
 								
-							 <?
+							 <?php 
                                 $edit_emplnumber=0; 
 								$query = mysqli_query($conn,"select * from file where form_no=$frm and stj='105' and opn_reg='1'")or die(mysqli_error());
 								$row = mysqli_fetch_array($query);
@@ -57,13 +57,13 @@
 								$flnm=$row['file_name']; 
 								$rfname=$row['bookin_ref']; 
 								?>
-								<? if($edit_emplnumber!=''){ ?>
+								<?php if($edit_emplnumber!=''){ ?>
 								<form method="post" enctype="multipart/form-data"><b>
-									    File_number = <? echo ' ' .  $edit_emplnumber ?> 
-									    Plot_number = <? echo ' ' .  $edit_firstname . ' ' . ' / ' . $edit_lastname   . ' - ' . $row['cat'] . ' - ' . $row['file_category'] . '  -' .  'Booking Refernce = ' . '  ' . $row['booking_ref']?> </b>
-                                        <? } ?>
+									    File_number = <?php echo ' ' .  $edit_emplnumber ?> 
+									    Plot_number = <?php echo ' ' .  $edit_firstname . ' ' . ' / ' . $edit_lastname   . ' - ' . $row['cat'] . ' - ' . $row['file_category'] . '  -' .  'Booking Refernce = ' . '  ' . $row['booking_ref']?> </b>
+                                        <?php } ?>
                                         
-										<input type="hidden" name="tn" value="<? echo $edit_emplnumber ?> ">
+										<input type="hidden" name="tn" value="<?php echo $edit_emplnumber ?> ">
 										<div class="control-group">
                                         <input type="text" name="bname"  placeholder="Buyer Name" style="text-transform: uppercase"  required> 
                                         
@@ -122,9 +122,9 @@
 													$user_query1 = mysqli_query($conn,"select * from dealertbl ")or die(mysqli_error());
 													while($row1 = mysqli_fetch_array($user_query1)){
 												 ?>
-                                             	<option value ="<? echo $row1['d_code']; ?> "> <? echo $row1['d_name']; ?></option>
+                                             	<option value ="<?php echo $row1['d_code']; ?> "> <?php echo $row1['d_name']; ?></option>
 												
-											<?  } ?>
+											<?php  } ?>
                                             </select>
                                           
 											<label>Priority:</label>
@@ -227,10 +227,10 @@ echo 'Open File  Sucessfully';
  <script>
   window.location = "edit_openfile1.1.php"; 
 </script>
-<? } ?> 
+<?php } ?> 
 
 </body></html>
-<? /*
+<?php /*
 
  <?php  $from1=0;  
 			$user_query2 = mysqli_query($conn,"select * from staff where username='$user_name'")or die(mysqli_error());

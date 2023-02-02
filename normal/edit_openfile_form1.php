@@ -25,7 +25,7 @@
                             <div class="block-content collapse in">
                                 <div >
 								
-							 <?
+							 <?php 
                                 $edit_emplnumber=0; 
 								$query = mysqli_query($conn,"select * from file where file_id='$get_id'")or die(mysqli_error());
 								$row = mysqli_fetch_array($query);
@@ -47,54 +47,54 @@
 								$jcnicno=$row['jcnicno'];
 								$jcntno=$row['jcnt_no'];
 								?>
-								<? if($edit_emplnumber!=''){ ?>
+								<?php if($edit_emplnumber!=''){ ?>
 								<form method="post" enctype="multipart/form-data">
-									    <b> File_number = <? echo ' ' .  $edit_emplnumber ?> <Br>
-									    <b>  Plot_number = <? echo ' ' .  $edit_lastname1 . ' ' . '/' .  $edit_firstname  ?> 
-                                        <? } ?>
-                                        <input type="hidden" name="tin_no"  value="<? echo $edit_emplnumber; ?>" > 
+									    <b> File_number = <?php echo ' ' .  $edit_emplnumber ?> <Br>
+									    <b>  Plot_number = <?php echo ' ' .  $edit_lastname1 . ' ' . '/' .  $edit_firstname  ?> 
+                                        <?php } ?>
+                                        <input type="hidden" name="tin_no"  value="<?php echo $edit_emplnumber; ?>" > 
                                         
 										<div class="control-group">
 										<b> Buyer Name </b>    
-                                        <input type="text" name="bname"  value="<? echo $flnm; ?>"  required><br> 
+                                        <input type="text" name="bname"  value="<?php echo $flnm; ?>"  required><br> 
                                         <b> S / D / W / O </b>
-                                        <input type="text" name="so"  value="<? echo $so; ?>"  required> 
+                                        <input type="text" name="so"  value="<?php echo $so; ?>"  required> 
                                        
                                         <div class="control-group">
                                             <b> Father Name </b>
-                                          <input type="text" name="fname"  value="<? echo $fname; ?>" required> 
+                                          <input type="text" name="fname"  value="<?php echo $fname; ?>" required> 
                                         <br> <b> Address </b>
-                                         <input type="text" name="add" value="<? echo $add; ?>"  required> 
+                                         <input type="text" name="add" value="<?php echo $add; ?>"  required> 
                                           </div>
                                        
                                         <div class="control-group">
 										 <b> CNIC # </b>
-                                          <input type="text" name="cnic"  value="<? echo $cnicno; ?>"  required> 
+                                          <input type="text" name="cnic"  value="<?php echo $cnicno; ?>"  required> 
                                        <br> <b> Contact # </b>
-                                          <input type="number" name="cntno"  value="<? echo $cntno; ?>" required> 
+                                          <input type="number" name="cntno"  value="<?php echo $cntno; ?>" required> 
                                         </div>
                                         
                                         <div class="control-group">
                                             <b> Joint Name </b>
-                                        <input type="text" name="jbname"   value="<? echo $jflnm; ?>"  required> 
+                                        <input type="text" name="jbname"   value="<?php echo $jflnm; ?>"  required> 
                                         <br><b> Joint S/D/W/O </b>
-                                        <input type="text" name="jso"   value="<? echo $jso; ?>"  required> 
+                                        <input type="text" name="jso"   value="<?php echo $jso; ?>"  required> 
                                         </div>
                                         
                                           <div class="control-group">
 											<b> Jnt Father Name </b>
-                                          <input type="text" name="jfname"   value="<? echo $jfname; ?>"  required> 
+                                          <input type="text" name="jfname"   value="<?php echo $jfname; ?>"  required> 
                                         <br><b> Joint Address </b> 
                                           <input type="text" name="jadd"  
-                                          value="<? echo $jadd; ?>" required> 
+                                          value="<?php echo $jadd; ?>" required> 
                                           </div> </b>
                                         
                                         <div class="control-group">
 											<b> Joint CNIC #
-                                          <input type="text" name="jcnic"   value="<? echo $jcnicno; ?>"  required> 
+                                          <input type="text" name="jcnic"   value="<?php echo $jcnicno; ?>"  required> 
                                           
                                       <br> <b> Joint Contact # </b>
-                                        <input type="number" name="jcntno"   value="<? echo $jcntno; ?>" required> 
+                                        <input type="number" name="jcntno"   value="<?php echo $jcntno; ?>" required> 
                                         </div>
                                         
                                         
@@ -167,10 +167,10 @@ echo 'Open File  Sucessfully';
  <script>
   window.location = "edit_openfile1.php"; 
 </script>
-<? } ?> 
+<?php } ?> 
 
 </body></html>
-<? /*
+<?php /*
 
  <?php  $from1=0;  
 			$user_query2 = mysqli_query($conn,"select * from staff where username='$user_name'")or die(mysqli_error());

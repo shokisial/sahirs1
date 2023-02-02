@@ -57,29 +57,29 @@
 										Plot Number  :
                                          <?php  echo '  ' . $edit_firstname   . ' -  ' .  $edit_lastname . ' - ' . $flcat ?>
                                           </div>
-                                        <input type="hidden" name="plotno" value="<? echo $edit_firstname; ?>">
+                                        <input type="hidden" name="plotno" value="<?php echo $edit_firstname; ?>">
                                        
-                                        <input type="hidden" name="block" value="<? echo $edit_lastname; ?>">
+                                        <input type="hidden" name="block" value="<?php echo $edit_lastname; ?>">
 									
-									   <input type="hidden" name="flcat" value="<? echo $flcat; ?>">
+									   <input type="hidden" name="flcat" value="<?php echo $flcat; ?>">
 									   
 										<div class="control-group">
 										Seller : 
                                             <?php echo  $flnm    ?>
-                                <input type="hidden" name="seller" value="<? echo $flnm; ?>">
-                                <input type="hidden" name="jseller" value="<? echo $jflnm; ?>">
-                                <input type="hidden" name="flfname" value="<? echo $flfname; ?>">
-                                <input type="hidden" name="jflfname" value="<? echo $jflfname; ?>">
-                                <input type="hidden" name="address" value="<? echo $address; ?>">
-                                <input type="hidden" name="ct" value="<? echo $ct; ?>">
-                                <input type="hidden" name="scnic" value="<? echo $scnic; ?>">
-                                <input type="hidden" name="cat" value="<? echo $cat; ?>">
-                                <input type="hidden" name="alt_no" value="<? echo $alt_no; ?>">
-                                <input type="hidden" name="typ" value="<? echo $type; ?>">
+                                <input type="hidden" name="seller" value="<?php echo $flnm; ?>">
+                                <input type="hidden" name="jseller" value="<?php echo $jflnm; ?>">
+                                <input type="hidden" name="flfname" value="<?php echo $flfname; ?>">
+                                <input type="hidden" name="jflfname" value="<?php echo $jflfname; ?>">
+                                <input type="hidden" name="address" value="<?php echo $address; ?>">
+                                <input type="hidden" name="ct" value="<?php echo $ct; ?>">
+                                <input type="hidden" name="scnic" value="<?php echo $scnic; ?>">
+                                <input type="hidden" name="cat" value="<?php echo $cat; ?>">
+                                <input type="hidden" name="alt_no" value="<?php echo $alt_no; ?>">
+                                <input type="hidden" name="typ" value="<?php echo $type; ?>">
                                 
-                                <input type="hidden" name="jaddress" value="<? echo $jaddress; ?>">
-                                <input type="hidden" name="jct" value="<? echo $jct; ?>">
-                                <input type="hidden" name="jscnic" value="<? echo $jscnic; ?>">
+                                <input type="hidden" name="jaddress" value="<?php echo $jaddress; ?>">
+                                <input type="hidden" name="jct" value="<?php echo $jct; ?>">
+                                <input type="hidden" name="jscnic" value="<?php echo $jscnic; ?>">
                                      
                                           </div>
                                        <?php  
@@ -114,34 +114,34 @@
 										Buyer Name : 
                                         <?php echo  '  ' . $buyername; ?>
                                           </div>
-                                        <input type="hidden" name="bname" value="<? echo $buyername; ?>" > 
+                                        <input type="hidden" name="bname" value="<?php echo $buyername; ?>" > 
                                         
                                         <div class="control-group">
 									 
                                         <?php echo  '  ' . $gdn . '  ' . ' :  ' .$fathername; ?>
                                           </div>
-                                        <input type="hidden" name="fname" value="<? echo $fathername; ?>" >  
+                                        <input type="hidden" name="fname" value="<?php echo $fathername; ?>" >  
                                           
 										<div class="control-group">
 										Address : 
                                         <?php echo  '  ' .  $address; ?>
                                           </div>
                                           
-                                       <input type="hidden" name="add" value="<? echo $address; ?>" >  
+                                       <input type="hidden" name="add" value="<?php echo $address; ?>" >  
                                         
                                         <div class="control-group">
 									    City : 
                                         <?php echo  '  ' .  $cty; ?>
                                           </div>
                                           
-                                       <input type="hidden" name="cty" value="<? echo $cty; ?>" >    
+                                       <input type="hidden" name="cty" value="<?php echo $cty; ?>" >    
                                        
                                         <div class="control-group">
 										CNIC : 
                                         <?php echo  '  ' .  $cnic;?>
                                           </div>
                                          
-                                         <input type="hidden" name="cnic" value="<? echo $cnic; ?>" > 
+                                         <input type="hidden" name="cnic" value="<?php echo $cnic; ?>" > 
                                          
                                           <div class="control-group">
 										Contact No : 
@@ -153,32 +153,32 @@
                                         <?php echo  '  ' .  $type . '       ' . '   ---    ' . 'Size : ' .  $cat; ?>
                                           </div>
                                          
-                                       <? if($type==='Joint'){ ?>  
+                                       <?php if($type==='Joint'){ ?>  
                                          <div class="control-group">
 										Joint Buyer Name : 
                                         <?php echo  '  ' . $jbuyername; ?>
                                           </div>
-                                        <input type="hidden" name="jbname" value="<? echo $jbuyername; ?>" > 
+                                        <input type="hidden" name="jbname" value="<?php echo $jbuyername; ?>" > 
                                         
                                         <div class="control-group">
 									 
                                         <?php echo  '  ' . $jgdn . '  ' . ' :  ' .$jfathername; ?>
                                           </div>
-                                        <input type="hidden" name="jfname" value="<? echo $jgdn . ' ' . $jfathername; ?>" >  
+                                        <input type="hidden" name="jfname" value="<?php echo $jgdn . ' ' . $jfathername; ?>" >  
                                           
 										<div class="control-group">
 										Address : 
                                         <?php echo  '  ' .  $jaddress; ?>
                                           </div>
                                           
-                                       <input type="hidden" name="jadd" value="<? echo $jaddress; ?>" >  
+                                       <input type="hidden" name="jadd" value="<?php echo $jaddress; ?>" >  
                                           
                                        <div class="control-group">
 										City: 
                                         <?php echo  '  ' .  $cty; ?>
                                           </div>
                                           
-                                       <input type="hidden" name="jcty" value="<? echo $cty; ?>" >  
+                                       <input type="hidden" name="jcty" value="<?php echo $cty; ?>" >  
                                           
                                           
                                         <div class="control-group">
@@ -186,13 +186,13 @@
                                         <?php echo  '  ' .  $jcnic;?>
                                           </div>
                                          
-                                         <input type="hidden" name="jcnic" value="<? echo $jcnic; ?>" > 
+                                         <input type="hidden" name="jcnic" value="<?php echo $jcnic; ?>" > 
                                          
                                           <div class="control-group">
 										Contact No : 
                                         <?php echo  '  ' .  $jcntno; ?>
                                           </div>
-                                       <? } ?>  
+                                       <?php } ?>  
                                          
                                          <div class="control-group">
 										NDC No : 
@@ -209,10 +209,10 @@
                                         <?php echo  '  ' . $alt_dat;   ?>
                                           </div>
                                           
-                                       <input type="hidden" name="altdat" value="<? echo $alt_dat; ?>">
-                                       <input type="hidden" name="altno" value="<? echo $alt_no; ?>">
+                                       <input type="hidden" name="altdat" value="<?php echo $alt_dat; ?>">
+                                       <input type="hidden" name="altno" value="<?php echo $alt_no; ?>">
                                      
-                                       <? /*   
+                                       <?php /*   
                                             <div class="control-group">
 											<label>Dealer Name:</label>
 											
@@ -222,9 +222,9 @@
 													$user_query1 = mysqli_query($conn,"select * from dealertbl")or die(mysqli_error());
 													while($row1 = mysqli_fetch_array($user_query1)){
 												 ?>
-                                             	<option value ="<? echo $row1['d_code']; ?> "> <? echo $row1['d_name']; ?></option>
+                                             	<option value ="<?php echo $row1['d_code']; ?> "> <?php echo $row1['d_name']; ?></option>
 												
-											<?  } ?>
+											<?php  } ?>
                                             </select>
                                           </div>
                                         </div>
@@ -262,13 +262,13 @@
                                         
                                         <div class="control-group">
                                           <div class="controls">
-                                       <? /*  <button type="submit" name="update5" class="btn btn-success" formaction="afdt/misplace.php" formtarget="_blank" title="Misplace"><i class="icon-save icon-large"></i></button> 
+                                       <?php /*  <button type="submit" name="update5" class="btn btn-success" formaction="afdt/misplace.php" formtarget="_blank" title="Misplace"><i class="icon-save icon-large"></i></button> 
                                          
                                          <button type="submit" name="update6" class="btn btn-success" formaction="afdt/abroad.php" formtarget="_blank" title="Abroad"><i class="icon-save icon-large"></i></button> */ ?>
                                               
                                         </div>
                                         </div>      
-                                        <? } ?>
+                                        <?php } ?>
                                 </form>
 								
 								</div>
@@ -290,7 +290,7 @@ $altno = $_POST['altno']; ?>
   window.location = "edit_transfer1.php"; 
 </script>   
     
-<? } 
+<?php } 
 /*
 
 
@@ -328,10 +328,10 @@ echo 'Transfer Sucessfully';
 //} 
 ?>
  
-<? } ?> 
+<?php } ?> 
 
 </body></html>
-<? /*
+<?php /*
 
  <?php  $from1=0;  
 			$user_query2 = mysqli_query($conn,"select * from staff where username='$user_name'")or die(mysqli_error());

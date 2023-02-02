@@ -24,7 +24,7 @@
 								$prt=$row['per']; $prtur=$row['trns_rpt']; $prtimage=$row['trns_pic'];
 								
 								?>
-								<? if($edit_emplnumber!=''){ $image='0';?> 
+								<?php if($edit_emplnumber!=''){ $image='0';?> 
 								<form method="post" enctype="multipart/form-data">
 									
 										<div class="control-group">
@@ -58,7 +58,7 @@
                                         
                                         
                                         <div class="control-group" align="center">
-                                          <? echo "<img src='uploads_ndc/$image' class='thumbnail' width='10' height='10'  >"; ?>	
+                                          <?php echo "<img src='uploads_ndc/$image' class='thumbnail' width='10' height='10'  >"; ?>	
                                         </div>  
                                         
                                         
@@ -67,11 +67,11 @@
                                             <?php echo '   ' . $row['ndc_waveoff'] ; $nwo= $row['ndc_waveoff'] ;  $nwop= $row['ndc_waveoffpic'] ;?>
                                           </div>
                                           
-                                        <? if($nwo==='Wave OFF'){     ?>
+                                        <?php if($nwo==='Wave OFF'){     ?>
                                         <div class="control-group" align="center">
-                                          <? echo "<img src='uploads_waveoff/$nwop' class='thumbnail' width='10' height='10'  >"; ?>	
+                                          <?php echo "<img src='uploads_waveoff/$nwop' class='thumbnail' width='10' height='10'  >"; ?>	
                                         </div>  
-                                        <? } ?>
+                                        <?php } ?>
                                         
                                         <div class="control-group">
 											<label>File Issue Reason:</label>
@@ -83,12 +83,12 @@
                                           </div>
                                         </div>
 										
-									<? /*	if($prt==='Urgent' and $prtimage==='0' ) {  ?>
+									<?php /*	if($prt==='Urgent' and $prtimage==='0' ) {  ?>
 								        <div class="control-group">
 								            Upload Reciept Picture incase Urgent Transfer Picture Missing
 								            <input type="file" name="uploadfile" id="uploadfile" required>
 										</div>
-										<? }  */?>  
+										<?php }  */?>  
 											<div class="control-group">
                                           <div class="controls">
 												<button name="update" class="btn btn-success"><i class="icon-save icon-large"></i></button>
@@ -97,7 +97,7 @@
                                         </div>
                                       
                                 </form>
-									<? }	?>
+									<?php }	?>
 								</div>
                             </div>
                         </div>

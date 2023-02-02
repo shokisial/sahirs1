@@ -17,7 +17,7 @@
 								$edit_name = $row['file_name'];
 								?>
 								
-								<? if($edit_emplnumber!=''){ ?>
+								<?php if($edit_emplnumber!=''){ ?>
 								<form method="post">
 									
 										<div class="control-group">
@@ -50,7 +50,7 @@
 							            </div>
 							            
 							            <div class="control-group" align="center">
-                                          <? echo "<img src='uploads_ver/$image' class='thumbnail' width='10' height='10'  >"; ?>	
+                                          <?php echo "<img src='uploads_ver/$image' class='thumbnail' width='10' height='10'  >"; ?>	
                                         </div>  
                                         
 										<div class="control-group">
@@ -81,7 +81,7 @@
                                           </div>
                                         </div>
                                 </form>
-								<? } ?>
+								<?php } ?>
 								</div>
                             </div>
                         </div>

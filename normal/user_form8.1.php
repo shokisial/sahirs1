@@ -39,7 +39,7 @@
 								$trns_dat=$row['trns_dat'];
 								
 								?>
-								<? if($edit_emplnumber!=''){ $image='0';?> 
+								<?php if($edit_emplnumber!=''){ $image='0';?> 
 								<form method="post" enctype="multipart/form-data">
 									
 										<div class="control-group">
@@ -57,7 +57,7 @@
                                        
                                 
                                       
-    <? $query1 = mysqli_query($conn,"SELECT * FROM `ndc` WHERE `tin_number`='$edit_emplnumber' and `ndc_stj`='4' ")or die(mysqli_error());
+    <?php $query1 = mysqli_query($conn,"SELECT * FROM `ndc` WHERE `tin_number`='$edit_emplnumber' and `ndc_stj`='4' ")or die(mysqli_error());
 								$row1 = mysqli_fetch_array($query1); ?>
 								
 								        <div class="control-group">
@@ -74,9 +74,9 @@
                                          </div>
                                          
                                         <div class="control-group" align="left">
-                                          <? echo "<img src='uploads_transfer/$image' class='thumbnail' width='10' height='10'  >"; ?>	
+                                          <?php echo "<img src='uploads_transfer/$image' class='thumbnail' width='10' height='10'  >"; ?>	
                                        
-                                          <? echo "<img src='uploads_conspic/$image1' class='thumbnail' width='10' height='10' align='right' >"; ?>	
+                                          <?php echo "<img src='uploads_conspic/$image1' class='thumbnail' width='10' height='10' align='right' >"; ?>	
                                         </div>  
                                         
                                         <div class="control-group">
@@ -92,66 +92,66 @@
                                         
                                         <form method="post"  enctype="multipart/form-data">
                                             
-                                        <input type="hidden" name='tnm' value="<? echo $edit_emplnumber; ?>">
+                                        <input type="hidden" name='tnm' value="<?php echo $edit_emplnumber; ?>">
                                         
-                                        <input type="hidden" name='bname' value="<? echo $row1['buyername']; ?>">
-                                        <input type="hidden" name='gdn' value="<? echo $row1['gdn']; ?>">
-                                        <input type="hidden" name='fname' value="<? echo $row1['fathername']; ?>">
-                                        <input type="hidden" name='add' value="<? echo $row1['address']; ?>">
+                                        <input type="hidden" name='bname' value="<?php echo $row1['buyername']; ?>">
+                                        <input type="hidden" name='gdn' value="<?php echo $row1['gdn']; ?>">
+                                        <input type="hidden" name='fname' value="<?php echo $row1['fathername']; ?>">
+                                        <input type="hidden" name='add' value="<?php echo $row1['address']; ?>">
                                         
-                                        <input type="hidden" name='seller' value="<? echo $edit_name; ?>">
-                                        <input type="hidden" name='selso' value="<? echo $edit_fname; ?>">
+                                        <input type="hidden" name='seller' value="<?php echo $edit_name; ?>">
+                                        <input type="hidden" name='selso' value="<?php echo $edit_fname; ?>">
                                         <p>Allotment #
-                                        <input type="text" name='altno' value="<? echo $row1['alt_no']; ?>"> </p>
-                                        <input type="hidden" name='plotno' value="<? echo $edit_firstname; ?>">
-                                        <input type="hidden" name='block' value="<? echo $row['block']; ?>">
-                                        <input type="hidden" name='msr' value="<? echo $row['file_category']; ?>">
-                                        <input type="hidden" name='cat' value="<? echo $row['cat']; ?>">
+                                        <input type="text" name='altno' value="<?php echo $row1['alt_no']; ?>"> </p>
+                                        <input type="hidden" name='plotno' value="<?php echo $edit_firstname; ?>">
+                                        <input type="hidden" name='block' value="<?php echo $row['block']; ?>">
+                                        <input type="hidden" name='msr' value="<?php echo $row['file_category']; ?>">
+                                        <input type="hidden" name='cat' value="<?php echo $row['cat']; ?>">
                                           <P>Application #
-                                        <input type="text" name='aplno' value="<? echo $row['trns_appno']; ?>"></P>
+                                        <input type="text" name='aplno' value="<?php echo $row['trns_appno']; ?>"></P>
                                       
-                                        <input type="hidden" name='apldat' value="<? echo $row1['dat']; ?>">
-                                        <input type="hidden" name='typ' value="<? echo $tp; ?>">
-                                        <input type="hidden" name='image5' value="<? echo $image1; ?>">
+                                        <input type="hidden" name='apldat' value="<?php echo $row1['dat']; ?>">
+                                        <input type="hidden" name='typ' value="<?php echo $tp; ?>">
+                                        <input type="hidden" name='image5' value="<?php echo $image1; ?>">
                                         
                                         <div class="control-group">
 							            <input type="file" name="uploadfile" id="uploadfile" required />
 										&nbsp;&nbsp; Scan Buyer Picture 
 										
-										<? if($tp==='Joint'){ ?>
+										<?php if($tp==='Joint'){ ?>
 										<input type="file" name="uploadfilej" id="uploadfilej" required>
 										Scan Joint Buyer Picture 
-										<? } ?>
+										<?php } ?>
 										</div>
 										
                                             <button type="submit" name="lot" class="btn btn-success" formaction="test.php" formtarget="_blank" title="Print Transfer Letter"><i class="icon-save icon-large"></i></button>  Print Transfer Letter </form>
                                         
                                         <form method="post"  action="test_coverpic.php" enctype="multipart/form-data">
                                             
-                                        <input type="hidden" name='tnm' value="<? echo $edit_emplnumber; ?>">
+                                        <input type="hidden" name='tnm' value="<?php echo $edit_emplnumber; ?>">
                                         
-                                        <input type="hidden" name='bname' value="<? echo $row1['buyername']; ?>">
-                                        <input type="hidden" name='gdn' value="<? echo $row1['gdn']; ?>">
-                                        <input type="hidden" name='fname' value="<? echo $row1['fathername']; ?>">
-                                        <input type="hidden" name='add' value="<? echo $row1['address']; ?>">
+                                        <input type="hidden" name='bname' value="<?php echo $row1['buyername']; ?>">
+                                        <input type="hidden" name='gdn' value="<?php echo $row1['gdn']; ?>">
+                                        <input type="hidden" name='fname' value="<?php echo $row1['fathername']; ?>">
+                                        <input type="hidden" name='add' value="<?php echo $row1['address']; ?>">
                                         
-                                        <input type="hidden" name='seller' value="<? echo $edit_name; ?>">
-                                        <input type="hidden" name='selso' value="<? echo $edit_fname; ?>">
+                                        <input type="hidden" name='seller' value="<?php echo $edit_name; ?>">
+                                        <input type="hidden" name='selso' value="<?php echo $edit_fname; ?>">
                                         
-                                        <input type="hidden" name='altno' value="<? echo $row1['alt_no']; ?>">
-                                        <input type="hidden" name='plotno' value="<? echo $edit_firstname; ?>">
-                                        <input type="hidden" name='block' value="<? echo $row['block']; ?>">
-                                        <input type="hidden" name='msr' value="<? echo $row['file_category']; ?>">
-                                        <input type="hidden" name='cat' value="<? echo $row['cat']; ?>">
+                                        <input type="hidden" name='altno' value="<?php echo $row1['alt_no']; ?>">
+                                        <input type="hidden" name='plotno' value="<?php echo $edit_firstname; ?>">
+                                        <input type="hidden" name='block' value="<?php echo $row['block']; ?>">
+                                        <input type="hidden" name='msr' value="<?php echo $row['file_category']; ?>">
+                                        <input type="hidden" name='cat' value="<?php echo $row['cat']; ?>">
                                          
-                                        <input type="hidden" name='aplno' value="<? echo $row['trns_appno']; ?>">
+                                        <input type="hidden" name='aplno' value="<?php echo $row['trns_appno']; ?>">
                                       
-                                        <input type="hidden" name='trnsdat' value="<? echo $row['trns_dat']; ?>">
+                                        <input type="hidden" name='trnsdat' value="<?php echo $row['trns_dat']; ?>">
                                         
                                         
-                                        <input type="hidden" name='apldat' value="<? echo $row1['dat']; ?>">
-                                        <input type="hidden" name='typ' value="<? echo $tp; ?>">
-                                        <input type="hidden" name='image5' value="<? echo $image1; ?>">
+                                        <input type="hidden" name='apldat' value="<?php echo $row1['dat']; ?>">
+                                        <input type="hidden" name='typ' value="<?php echo $tp; ?>">
+                                        <input type="hidden" name='image5' value="<?php echo $image1; ?>">
                                         
                                          <button type="submit" name="cov" class="btn btn-success" formaction="test_coverpic.php" formtarget="_blank" title="Print Cover Picture"><i class="icon-save icon-large"></i></button>  Print Cover Picture </form>
                                         
@@ -160,7 +160,7 @@
                                         </div>
                                       
                                 
-									<? }	?>
+									<?php }	?>
 								</div>
                             </div>
                         </div>
