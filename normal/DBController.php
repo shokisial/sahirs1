@@ -2,9 +2,9 @@
 <?php
 class DBController {
     private $host = 'localhost';
-	private $user = 'w1222sah_fileusr';
-	private $password = '-6vwbPKTehcw';
-	private $database = 'w1222sah_saestatedb';
+	private $user = 'root';
+	private $password = '1234';
+	private $database = 'v0503sah_saestatedb';
 	private $conn;
 	
         function __construct() {

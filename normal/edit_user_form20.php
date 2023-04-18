@@ -120,19 +120,7 @@
 										</div>
 										
 										
-									<?	/* if($prt==='Urgent' and $prtimage==='0' ) {  ?>
-								        <div class="control-group">
-								          <b>  Upload Reciept Urgent Transfer Picture Missing </b>
-								            <input type="file" name="uploadfile" id="uploadfile" required>
-										</div>
-										<?php } ?>  
-										
-									<?	if($prt==='Urgent' and $prtur==='0' ) {  ?>
-								        <div class="control-group">
-								          <b>  Reciept # Urgent Transfer  Missing </b>
-								            <input type="number" name="rptmis" id="rptmis" required>
-										</div>
-										<?php } */ ?>
+									
 										
 											<div class="control-group">
                                           <div class="controls">
@@ -186,79 +174,7 @@ else
 {
     echo 'Open File Type Not Acceptable';
 }
-/*
-$user_query5 = mysqli_query($conn,"SELECT * FROM `transtbl` where tin_number = '$tin_number' and trns_stj='1' and trns_per='Urgent' and trns_pic='0' ")or die(mysqli_error());
-			 while($row5 = mysqli_fetch_array($user_query5)){
-			 $vrpic= $row5['trns_pic'];}
-
-if($vrpic==='0' ){
-    $filename = $_FILES["uploadfile"]["name"];     
-    $tempname = $_FILES["uploadfile"]["tmp_name"]; 
-    $folder = "uploads_transfer/".$filename;
-   
-if (move_uploaded_file($tempname, $folder))  {
-            $msg = "Image uploaded successfully";
-        }else{
-            $msg = "Failed to upload image";
-      }
-      
- mysqli_query($conn,"UPDATE `transtbl` SET trns_pic='$filename' where tin_number = '$tin_number' and trns_stj='1' and trns_per='Urgent' and trns_pic='0'")or die(mysqli_error());
-
-}
-
-
-
-
-$trns_newrpt=0;
-$user_query5 = mysqli_query($conn,"SELECT * FROM `transtbl` where tin_number = '$tin_number' and trns_stj='1' and trns_per='Urgent' and trns_rptno='0' ")or die(mysqli_error());
-			 while($row5 = mysqli_fetch_array($user_query5)){
-			 $trns_newrpt= $row5['trns_rptno'];}
-
-if($trns_newrpt==='0' ){
-mysqli_query($conn,"UPDATE `transtbl` SET trns_rptno='$rptmis' where tin_number = '$tin_number' and trns_stj='1' and trns_per='Urgent' and trns_rptno='0'")or die(mysqli_error());
-}
-
- $stj=2; 
-if($cmnt==='Transfer Data Not Verified'){ $stj='1'; 
- mysqli_query($conn,"UPDATE `transtbl` SET trns_res='$cmnt',trns_alccmnt='$trns_res',act_dat='$dat',user='$session_id' where tin_number = '$tin_number' and trns_stj='1'")or die(mysqli_error());
-}  
-else{
-
-mysqli_query($conn,"insert into activity_log (date,username,action) values(NOW(),'$user_name','Ready File issue to $cmnt1')")or die(mysqli_error());
-mysqli_query($conn,"UPDATE `transtbl` SET `trns_stu`='File Issued',trns_res='$cmnt',dat='$dat',user='$session_id',trns_stj='2',alc_to='$cmnt1',trns_alccmnt='$trns_res' where tin_number = '$tin_number' and trns_stj='1'")or die(mysqli_error());
-
-mysqli_query($conn,"INSERT INTO `borrow` (`employee_number`, `tin_number`, `date_borrow`, `ti_barrow`, `file_status`, `date_return`, `ti_return`, `emp_request`, `cmnt`,stj) VALUES ('$cmnt1', '$tin_number', '$dat', '$tim', 'borrowed', '0', '0', 'record', '$cmnt','1')")or die(mysqli_error());
-mysqli_query($conn,"update file set trade_name = '$cmnt1',status='borrowed' ,stj='1' where tin_number = '$tin_number' ")or die(mysqli_error());
-
-echo 'File Record Transfer Sucessfully';
-}
 ?>
-
-
-
- <?php  $from1=0;  
-			$user_query2 = mysqli_query($conn,"SELECT * FROM `staff` WHERE `staff_id`='0'")or die(mysqli_error());
-			 while($row2 = mysqli_fetch_array($user_query2)){
-			 $from1= $row2['email'];} ?>
-<?php  $from2=0;  
-			$user_query3 = mysqli_query($conn,"select * from staff where staff_id='12'")or die(mysqli_error());
-			 while($row3 = mysqli_fetch_array($user_query3)){
-			 $from2= $row3['email'];} ?>											
-<?php
-    ini_set( 'display_errors', 1 );
-    error_reporting( E_ALL );
-    $from = "$from1";
-    $to = "$from2";
-    $subject = "Ready File Issue Printing";
-    $message = "Status send";
-    $headers = "From:" . $from;
-    if(mail($to,$subject,$message, $headers)) {
-		echo "The email message was sent.";
-    } else {
-    	echo "The email message was not sent.";
-    }
-    
-    */ ?>
 <script>
   window.location = "edit_user20.php"; 
 </script>

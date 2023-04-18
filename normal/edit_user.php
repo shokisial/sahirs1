@@ -110,7 +110,7 @@
                         <hr>
 <p > <h3 class="box-title">
 
-<a href="https://fileonline.sahirs.com/normal/index5.php" target="_blank">Record Download</a> &nbsp;&nbsp;&nbsp;&nbsp;
+<a href="index5.php" target="_blank">Record Download</a> &nbsp;&nbsp;&nbsp;&nbsp;
 
 <a href="https://fileonline.sahirs.com/normal/index_open.php" target="_blank">Open File Download</a>
 <?php /* <form action="index5.php" method="POST" enctype="multipart/form-data" target="_blank">

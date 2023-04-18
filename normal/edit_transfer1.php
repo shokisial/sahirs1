@@ -18,11 +18,8 @@
 							<?php 
 							$query = mysqli_query($conn,"select * from file where trade_name='$session_id' ")or die(mysqli_error());
 						if($session_id==='7' or $session_id==='1'){ $query = mysqli_query($conn,"select * from ndc where ndc_stj='3'")or die(mysqli_error()); }
-					//	if($session_id!=16){ $query = mysqli_query($conn,"select * from file")or die(mysqli_error()); }
-					//	if($session_id!=18){ $query = mysqli_query($conn,"select * from file")or die(mysqli_error()); }
 						
 							$count = mysqli_num_rows($query);
-						//	echo 'user'. $session_id;
 							?>
                                 <div class="muted pull-left"><i class="icon-reorder icon-large"></i>  Transfer file List</div>
                                 <div class="muted pull-right">
@@ -53,8 +50,6 @@
 										<tbody>
 													<?php  $tnm=0;
 								if($session_id==='7' or $session_id==='1'){ $user_query = mysqli_query($conn,"select * from ndc inner join file on ndc.tin_number=file.tin_number where ndc.ndc_stj='3'")or die(mysqli_error());}
-							//	if($session_id!=17){ $user_query = mysqli_query($conn,"select * from file")or die(mysqli_error());}
-							//	if($session_id!=18){ $user_query = mysqli_query($conn,"select * from file")or die(mysqli_error());}
 													
 													while($row = mysqli_fetch_array($user_query)){
 													$id = $row['file_id'];

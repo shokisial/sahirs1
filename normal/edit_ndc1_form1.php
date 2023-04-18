@@ -77,8 +77,8 @@
 										Block  : 
                                             <?php echo '   ' .  $edit_lastname . ' - ' . 'Dealer:  ' . '  ' . $snd_dat1 ?>
                                          
-                                        <?php  $ex-0;
-										$user_query10 = mysqli_query($conn,"select * from dealertbl where d_code='$snd_dat'")or die(mysqli_error());
+                                        <?php  $ex=0;
+										$user_query10 = mysqli_query($conn,"select * from dealertbl where d_code='$snd_dat1'")or die(mysqli_error());
 											while($row10 = mysqli_fetch_array($user_query10)){
 											$ex=$row10['opn']; } ?>
 											
@@ -460,36 +460,6 @@ if (move_uploaded_file($tempname1, $folder1))  {
 <?php } }?> 
 
 </body></html>
-<?php /*
-
- <?php  $from1=0;  
-			$user_query2 = mysqli_query($conn,"select * from staff where username='$user_name'")or die(mysqli_error());
-			 while($row2 = mysqli_fetch_array($user_query2)){
-			 $from1= $row2['email'];} ?>
-<?php  $from2=0;  
-			$user_query3 = mysqli_query($conn,"select * from staff where staff_id='$empno'")or die(mysqli_error());
-			 while($row3 = mysqli_fetch_array($user_query3)){
-			 $from2= $row3['email'];} ?>											
-<?php
-    ini_set( 'display_errors', 1 );
-    error_reporting( E_ALL );
-    $from = "$from1";
-    $to = "$from2";
-    $subject = "File sended";
-    $message = "File No - $tin_number - Plot # $plot_no - $block send by $user_name - $from1 - by - $from2";
-    $headers = "From:" . $from;
-    if(mail($to,$subject,$message, $headers)) {
-		echo "The email message was sent.";
-    } else {
-    	echo "The email message was not sent.";
-    }
-    ?>
-
-<?php
-}  
-//Mail
-
-?>
 
 
 

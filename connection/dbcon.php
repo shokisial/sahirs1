@@ -1,5 +1,5 @@
 <?php
-$conn = mysqli_connect('localhost','root','1234','v0503sah_saestatedb')or die(mysqli_error());
+$conn = mysqli_connect('localhost','root','','file_manager')or die(mysqli_error());
 
 
 ?>
